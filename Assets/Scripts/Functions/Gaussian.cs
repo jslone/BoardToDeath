@@ -3,9 +3,9 @@ using System.Collections;
 
 // f(x) = Height * e^(-(x - Midpoint)^2 / 2 * Width^2)
 public class Gaussian : Function {
-	float Height;
-	float Midpoint;
-	float Width;
+	public float Height;
+	public float Midpoint;
+	public float Width;
 
 	public override float eval (float x) {
 		float sqrt_top = x - Midpoint;

@@ -5,9 +5,9 @@ using System.Collections;
 // f(x) = --------------------------------
 //         1 + e^(-Slope * (x - Midpoint)
 public class Logistic : Function {
-	float Height;
-	float Midpoint;
-	float Slope;
+	public float Height;
+	public float Midpoint;
+	public float Slope;
 
 	public override float eval (float x) {
 		return Height / (1 + Mathf.Exp(-Slope * (x - Midpoint)));
