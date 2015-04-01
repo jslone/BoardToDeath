@@ -17,13 +17,14 @@ public class PlayerInput : MonoBehaviour {
 			Collider2D col = Physics2D.OverlapPoint(point);
 
 			if(col) {
+				Debug.Log("Hit something");
 				Commandable com = col.GetComponent<Commandable>();
 				Target target = col.GetComponent<Target>();
 
 				if(com) {
 					selected = com;
 				}
-				if(target) {
+				if(target && selected) {
 					selected.UseTarget(target);
 				}
 			}

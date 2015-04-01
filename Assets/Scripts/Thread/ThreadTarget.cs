@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Thread : MonoBehaviour {
+public class ThreadTarget : Target {
 
 	// Use this for initialization
 	void Start () {
@@ -14,9 +14,9 @@ public class Thread : MonoBehaviour {
 	}
 
 	public void Cut() {
-		// Spawn soul
-
-		// Break thread
-		Destroy(gameObject);
+		Thread thread = gameObject.GetComponentInChildren<Thread>();
+		if(thread) {
+			thread.Cut();
+		}
 	}
 }
