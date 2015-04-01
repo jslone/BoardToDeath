@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11438796}
   - 114: {fileID: 11420250}
   - 61: {fileID: 6156464}
+  - 114: {fileID: 11449054}
   m_Layer: 0
   m_Name: ThreadSpawner
   m_TagString: Untagged
@@ -85,6 +86,17 @@ MonoBehaviour:
   Height: 1
   Midpoint: 8
   Slope: .400000006
+--- !u!114 &11449054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21380dd945d2c47b7ae0edd380f53d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11482706
 MonoBehaviour:
   m_ObjectHideFlags: 1

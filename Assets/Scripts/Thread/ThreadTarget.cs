@@ -19,4 +19,8 @@ public class ThreadTarget : Target {
 			thread.Cut();
 		}
 	}
+
+	public override void DoSomething() {
+		FindObjectOfType<Fate>().UseTarget(this);
+	}
 }

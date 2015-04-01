@@ -57,8 +57,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Height: .375
-  Midpoint: 10
-  Slope: .5
+  Midpoint: 8
+  Slope: .400000006
 --- !u!114 &11440514
 MonoBehaviour:
   m_ObjectHideFlags: 1
