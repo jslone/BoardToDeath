@@ -92,7 +92,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1164373142}
+    m_TransformParent: {fileID: 869890484}
     m_Modifications:
     - target: {fileID: 452670, guid: 79b8ad620600745de876fab35efd9902, type: 2}
       propertyPath: m_LocalPosition.x
@@ -124,7 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452670, guid: 79b8ad620600745de876fab35efd9902, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 131370, guid: 79b8ad620600745de876fab35efd9902, type: 2}
       propertyPath: m_Name
@@ -167,8 +167,8 @@ Transform:
   - {fileID: 818607357}
   - {fileID: 1056799847}
   - {fileID: 1197942900}
-  m_Father: {fileID: 1164373142}
-  m_RootOrder: 0
+  m_Father: {fileID: 869890484}
+  m_RootOrder: 1
 --- !u!1001 &442477895
 Prefab:
   m_ObjectHideFlags: 0
@@ -267,8 +267,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 558280817}
   - 212: {fileID: 558280816}
+  - 114: {fileID: 558280818}
   m_Layer: 0
-  m_Name: River
+  m_Name: River_BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -307,12 +308,51 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 558280815}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.25, z: 0}
-  m_LocalScale: {x: 4, y: .5, z: 1}
+  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalScale: {x: 40, y: 5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 600098977}
+  m_RootOrder: 0
+--- !u!114 &558280818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558280815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a28b520504834e1fa610f9125d5c1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Size: 2.5
+--- !u!1 &600098976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 600098977}
+  m_Layer: 0
+  m_Name: River
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &600098977
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 600098976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.5, z: 0}
+  m_LocalScale: {x: .100000001, y: .100000001, z: 1}
   m_Children:
-  - {fileID: 999243673}
+  - {fileID: 558280817}
   m_Father: {fileID: 1164373142}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!1001 &818607356
 Prefab:
   m_ObjectHideFlags: 0
@@ -429,50 +469,40 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
   m_PrefabInternal: {fileID: 837004123}
---- !u!4 &896137315
-Transform:
-  m_PrefabParentObject: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-  m_PrefabInternal: {fileID: 1973961242}
---- !u!1 &999243672
+--- !u!1 &869890483
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 999243673}
-  - 114: {fileID: 999243674}
+  - 4: {fileID: 869890484}
   m_Layer: 0
-  m_Name: RiverCamera
+  m_Name: Fates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &999243673
+--- !u!4 &869890484
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999243672}
+  m_GameObject: {fileID: 869890483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 558280817}
+  m_Children:
+  - {fileID: 2103025696}
+  - {fileID: 430847967}
+  - {fileID: 513883372}
+  m_Father: {fileID: 1164373142}
   m_RootOrder: 0
---- !u!114 &999243674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 999243672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a28b520504834e1fa610f9125d5c1f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Size: 2.5
+--- !u!4 &896137315
+Transform:
+  m_PrefabParentObject: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
+  m_PrefabInternal: {fileID: 1973961242}
 --- !u!1001 &1056799846
 Prefab:
   m_ObjectHideFlags: 0
@@ -557,10 +587,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
-  - {fileID: 430847967}
-  - {fileID: 513883372}
-  - {fileID: 2103025696}
-  - {fileID: 558280817}
+  - {fileID: 869890484}
+  - {fileID: 600098977}
   m_Father: {fileID: 0}
   m_RootOrder: 1
 --- !u!114 &1164373143
@@ -843,7 +871,7 @@ MonoBehaviour:
   CameraCheckpoints:
   - {fileID: 2103025698}
   - {fileID: 1164373143}
-  - {fileID: 999243674}
+  - {fileID: 558280818}
   Acceleration: 100
   Drag: 10
   Gravity: 10
@@ -981,7 +1009,7 @@ GameObject:
   - 212: {fileID: 2103025697}
   - 114: {fileID: 2103025698}
   m_Layer: 0
-  m_Name: Fates
+  m_Name: Fates_BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -997,8 +1025,8 @@ Transform:
   m_LocalPosition: {x: 0, y: .25, z: 0}
   m_LocalScale: {x: 4, y: .5, z: 1}
   m_Children: []
-  m_Father: {fileID: 1164373142}
-  m_RootOrder: 2
+  m_Father: {fileID: 869890484}
+  m_RootOrder: 0
 --- !u!212 &2103025697
 SpriteRenderer:
   m_ObjectHideFlags: 0
