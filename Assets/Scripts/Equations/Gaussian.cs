@@ -2,7 +2,7 @@
 using System.Collections;
 
 // f(x) = Height * e^(-(x - Midpoint)^2 / 2 * Width^2)
-public class Gaussian : Function {
+public class Gaussian : Equation {
 	public float Height;
 	public float Midpoint;
 	public float Width;

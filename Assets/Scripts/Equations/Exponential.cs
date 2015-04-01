@@ -2,7 +2,7 @@
 using System.Collections;
 
 // f(x) = ae^x + b
-public class Exponential : Function {
+public class Exponential : Equation {
 	public float Scalar;
 	public float Intercept;
 

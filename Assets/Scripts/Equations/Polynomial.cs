@@ -2,7 +2,7 @@
 using System.Collections;
 
 // y = sum from i = 0 to n of Coefficients[i] * x^i
-public class Polynomial : Function {
+public class Polynomial : Equation {
 	public float[] Coefficients;
 
 	public override float eval(float x) {

@@ -4,7 +4,7 @@ using System.Collections;
 //                     Height
 // f(x) = --------------------------------
 //         1 + e^(-Slope * (x - Midpoint)
-public class Logistic : Function {
+public class Logistic : Equation {
 	public float Height;
 	public float Midpoint;
 	public float Slope;

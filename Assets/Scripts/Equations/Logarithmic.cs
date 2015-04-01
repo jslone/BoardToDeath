@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Logarithmic : Function {
+public class Logarithmic : Equation {
 	public float Scalar;
 	public float Intercept;
 	public float Offset;
