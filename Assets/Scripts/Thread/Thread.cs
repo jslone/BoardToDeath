@@ -15,7 +15,7 @@ public class Thread : MonoBehaviour {
 
 	public void Cut() {
 		// Spawn soul
-
+		SoulSpawner.UseSpawner();
 		// Break thread
 		Destroy(gameObject);
 	}

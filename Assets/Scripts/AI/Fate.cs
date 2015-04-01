@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Fate : Commandable {
-	public float Speed = 1.0f;
+	public MoveCharacter move;
 	public float Offset = 0.5f;
 
 	public ThreadTarget Target;
@@ -16,28 +16,15 @@ public class Fate : Commandable {
 	void Update () {
 
 		if(Target) {
-			Vector3 pos = transform.position;
-			float targetX = Target.transform.position.x + Offset;
+			move.Move(Target.transform.position.x + Offset);
 
-			float deltaX = Mathf.Sign(targetX - pos.x) * Speed * Time.deltaTime;
-
-			deltaX = Mathf.Clamp(deltaX, -Mathf.Abs(targetX - pos.x), Mathf.Abs(targetX - pos.x));
-
-			if(deltaX * transform.lossyScale.x > 0) {
-				Flip();
-			}
-
-			if(Mathf.Abs(deltaX) < 0.01f) {
+			if(Mathf.Abs((Target.transform.position.x + Offset) - transform.position.x) < 0.01f) {
 				if(transform.localScale.x < 0) {
 					Flip();
 				}
 				Target.Cut();
 				Target = null;
 			}
-
-			pos.x += deltaX;
-
-			transform.position = pos;
 		}
 	}
 

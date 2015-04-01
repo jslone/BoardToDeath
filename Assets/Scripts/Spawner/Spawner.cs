@@ -16,10 +16,13 @@ public class Spawner : MonoBehaviour {
 	
 	}
 
-	public void Spawn() {
+	public GameObject Spawn() {
 		if(!(Wait && last)) {
 			last = Instantiate(prefab,transform.position,transform.rotation) as GameObject;
 			last.transform.parent = transform;
+
+			return last;
 		}
+		return null;
 	}
 }
