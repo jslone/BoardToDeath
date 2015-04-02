@@ -21,7 +21,7 @@ public class PlayerInput : MonoBehaviour {
 				Target target = col.GetComponent<Target>();
 
 				if(com) {
-					selected = com;
+					//selected = com;
 				}
 				if(target) {
 					if(selected) {

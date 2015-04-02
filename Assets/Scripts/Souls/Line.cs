@@ -15,7 +15,17 @@ public class Line : MonoBehaviour {
 	void Update () {
 		float Offset = transform.position.x;
 		foreach(MoveCharacter character in Queue) {
-			character.Move(Offset);
+			Vector3 target = transform.position;
+			Vector3 pos = character.transform.position;
+
+			if(Mathf.Abs(pos.y - target.y) > 0.1f) {
+				pos.y = target.y;
+				character.Move(pos);
+			} else {
+				target.x = Offset;
+				character.Move(target);
+			}
+
 			Offset += Space;
 		}
 	}

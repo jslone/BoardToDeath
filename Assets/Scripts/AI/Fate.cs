@@ -16,7 +16,9 @@ public class Fate : Commandable {
 	void Update () {
 
 		if(Target) {
-			move.Move(Target.transform.position.x + Offset);
+			Vector3 target = move.transform.position;
+			target.x = Target.transform.position.x + Offset;
+			move.Move(target);
 
 			if(Mathf.Abs((Target.transform.position.x + Offset) - transform.position.x) < 0.01f) {
 				if(transform.localScale.x < 0) {
