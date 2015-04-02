@@ -7,6 +7,6 @@ public class Sine : Equation {
 	public float Offset;
 
 	public override float eval (float x) {
-		return Amplitude * Mathf.Sin(2 * Mathf.PI * Period * x + Offset);
+		return Amplitude * Mathf.Sin(2 * Mathf.PI * x / Period + Offset);
 	}
 }
