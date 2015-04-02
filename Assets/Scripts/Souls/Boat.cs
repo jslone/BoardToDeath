@@ -20,7 +20,7 @@ public class Boat : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(approaching && Movement.delta < 0) {
-			Debug.Log("pick em up");
+
 			int roomOnBoat = Capacity;
 			Vector3 posInBoat = FrontOfBoat;
 			while(roomOnBoat > 0 && WaitLine.Queue.Count > 0) {
@@ -37,10 +37,11 @@ public class Boat : MonoBehaviour {
 			approaching = false;
 		}
 		if(!approaching && Movement.delta > 0) {
-			Debug.Log("drop em off");
+
 			foreach(GameObject soul in onBoat) {
 				Destroy(soul);
 			}
+			Souls.souls += onBoat.Count;
 			onBoat.Clear();
 			approaching = true;
 		}
