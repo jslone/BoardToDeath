@@ -4,6 +4,7 @@ using System.Collections;
 public class Spawner : MonoBehaviour {
 	public GameObject prefab;
 	public bool Wait;
+	public bool ScaleOnInstantiate;
 	private GameObject last;
 
 	// Use this for initialization
@@ -19,7 +20,13 @@ public class Spawner : MonoBehaviour {
 	public GameObject Spawn() {
 		if(!(Wait && last)) {
 			last = Instantiate(prefab,transform.position,transform.rotation) as GameObject;
-			last.transform.parent = transform;
+			if(ScaleOnInstantiate) {
+				Vector3 scale = last.transform.localScale;
+				last.transform.parent = transform;
+				last.transform.localScale = scale;
+			} else {
+				last.transform.parent = transform;
+			}
 
 			return last;
 		}
