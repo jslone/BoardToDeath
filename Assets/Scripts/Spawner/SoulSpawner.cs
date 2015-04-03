@@ -16,7 +16,7 @@ public class SoulSpawner : Spawner {
 	private void UseSpawnerLocal() {
 		GameObject soul = Spawn();
 		if(soul) {
-			line.Add(soul.GetComponent<MoveCharacter>());
+			line.Add(soul.GetComponent<CharacterLine>());
 		}
 	}
 
