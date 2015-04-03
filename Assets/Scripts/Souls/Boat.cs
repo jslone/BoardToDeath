@@ -23,8 +23,11 @@ public class Boat : MonoBehaviour {
 
 			int roomOnBoat = Capacity;
 			Vector3 posInBoat = FrontOfBoat;
-			while(roomOnBoat > 0 && WaitLine.Queue.Count > 0) {
-				GameObject soul = WaitLine.Queue.Dequeue().gameObject;
+			while(roomOnBoat > 0 && WaitLine.Length > 0) {
+				MoveCharacter character = WaitLine.Remove();
+				character.enabled = false;
+
+				GameObject soul = character.gameObject;
 				Vector3 scale = soul.transform.localScale;
 				soul.transform.parent = transform;
 				soul.transform.localScale = scale;

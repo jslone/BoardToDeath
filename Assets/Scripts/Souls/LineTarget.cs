@@ -15,9 +15,8 @@ public class LineTarget : Target {
 	}
 
 	public override void DoSomething() {
-		if(from.Queue.Count > 0) {
-			MoveCharacter m = from.Queue.Dequeue();
-			to.Queue.Enqueue(m);
+		if(from.Length > 0) {
+			to.Add(from.Remove());
 		}
 	}
 }

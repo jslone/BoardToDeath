@@ -1,26 +1,44 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MoveCharacter : MonoBehaviour {
 	public float Speed = 1.0f;
+	public LinkedList<Vector3> targets = new LinkedList<Vector3>();
 
 	// Use this for initialization
 	void Start () {
 	
 	}
+
+	void Update() {
+		if(targets.Count > 0) {
+			Vector3 target = targets.First.Value;
+			Vector3 pos = transform.position;
+			
+			Vector3 delta = (target - pos).normalized * Speed * Time.deltaTime;
+			
+			delta = Vector3.ClampMagnitude(delta, (target - pos).magnitude);
+			
+			if(delta.x * transform.lossyScale.x > 0) {
+				Flip();
+			}
+
+			pos += delta;
+			transform.position = pos;
+
+			if(pos == target) {
+				do {
+					targets.RemoveFirst();
+				} while(targets.Count > 0 && targets.First.Value == pos);
+			}
+
+		}
+	}
 	
 	public void Move(Vector3 target) {
-		Vector3 pos = transform.position;
-		
-		Vector3 delta = (target - pos).normalized * Speed * Time.deltaTime;
+		targets.AddLast(target);
 
-		delta = Vector3.ClampMagnitude(delta, (target - pos).magnitude);
-		
-		if(delta.x * transform.lossyScale.x > 0) {
-			Flip();
-		}
-		
-		transform.position = pos + delta;
 	}
 
 	void Flip() {
