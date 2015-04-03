@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Line : MonoBehaviour {
 	private Queue<CharacterLine> Queue = new Queue<CharacterLine>();
 	public float Space;
+	public int Capacity;
 	public int Length { get { return Queue.Count; }}
 
 	// Use this for initialization
@@ -13,13 +14,13 @@ public class Line : MonoBehaviour {
 	}
 	
 	public void Add(CharacterLine character) {
-		Queue.Enqueue(character);
 		Vector3 linePos = transform.position;
 		linePos.x += Space * Queue.Count;
 
+		Queue.Enqueue(character);
 
 		Vector3 lineEnd = transform.position;
-		lineEnd.x = character.targets.Count > 0 ? character.targets.First.Value.x : character.transform.position.x;
+		lineEnd.x += Space * Capacity;
 
 		character.Move(lineEnd);
 		character.Move(linePos);

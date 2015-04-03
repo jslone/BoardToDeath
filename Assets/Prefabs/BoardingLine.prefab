@@ -84,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Space: -.5
+  Capacity: 7
 --- !u!114 &11490122
 MonoBehaviour:
   m_ObjectHideFlags: 1
