@@ -5,7 +5,7 @@ using System.Collections;
 public class Polynomial : Equation {
 	public float[] Coefficients;
 
-	public override float eval(float x) {
+	public override float f (float x) {
 		float y = 0.0f;
 		float xn = 1.0f;
 

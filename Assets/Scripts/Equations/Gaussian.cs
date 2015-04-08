@@ -7,7 +7,7 @@ public class Gaussian : Equation {
 	public float Midpoint;
 	public float Width;
 
-	public override float eval (float x) {
+	public override float f (float x) {
 		float sqrt_top = x - Midpoint;
 		float bottom = 2.0f * Width * Width;
 		return Height * Mathf.Exp(-(sqrt_top * sqrt_top) / bottom);

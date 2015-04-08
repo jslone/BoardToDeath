@@ -9,7 +9,7 @@ public class Logistic : Equation {
 	public float Midpoint;
 	public float Slope;
 
-	public override float eval (float x) {
+	public override float f (float x) {
 		return Height / (1 + Mathf.Exp(-Slope * (x - Midpoint)));
 	}
 }

@@ -4,9 +4,9 @@ using System.Collections;
 public class Sine : Equation {
 	public float Amplitude;
 	public float Period;
-	public float Offset;
+	public float PhaseOffset;
 
-	public override float eval (float x) {
-		return Amplitude * Mathf.Sin(2 * Mathf.PI * x / Period + Offset);
+	public override float f (float x) {
+		return Amplitude * Mathf.Sin(2 * Mathf.PI * x / Period + PhaseOffset);
 	}
 }
