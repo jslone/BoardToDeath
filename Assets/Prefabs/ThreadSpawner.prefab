@@ -72,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 110010, guid: 4012899188baa4a33bf5a8ff30eae5fc, type: 2}
   Wait: 1
+  ScaleOnInstantiate: 0
 --- !u!114 &11445740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,6 +84,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3358cd6f6e46457ab216824914d2440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scale: 1
+  Offset: {x: 0, y: 0}
   Height: .5
   Midpoint: 8
   Slope: .200000003

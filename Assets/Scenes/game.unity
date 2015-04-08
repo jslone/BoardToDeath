@@ -880,10 +880,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 6
@@ -936,10 +932,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -1059,10 +1051,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 7
@@ -1163,10 +1151,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 8
@@ -1221,10 +1205,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 2
@@ -1278,10 +1258,6 @@ Prefab:
     - target: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
@@ -1365,10 +1341,6 @@ Prefab:
     - target: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Wait
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name

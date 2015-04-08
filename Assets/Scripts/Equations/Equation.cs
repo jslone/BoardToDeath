@@ -3,7 +3,7 @@ using System.Collections;
 
 // f(x) = eval(x)
 public abstract class Equation : MonoBehaviour {
-	public float Scale;
+	public float Scale = 1.0f;
 	public Vector2 Offset;
 
 	public float eval(float x) {

@@ -232,9 +232,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4b6eb01599b4465944935f2d195c1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scale: 1
+  Offset: {x: 0, y: 0}
   Amplitude: 10
   Period: 10
-  Offset: 0
+  PhaseOffset: 0
 --- !u!114 &11480272
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -56,6 +56,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3358cd6f6e46457ab216824914d2440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scale: 1
+  Offset: {x: 0, y: 0}
   Height: .375
   Midpoint: 8
   Slope: .400000006
@@ -72,6 +74,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {fileID: 11482040}
   Direction: {x: 0, y: -1, z: 0}
+  Flipable: 0
 --- !u!114 &11459220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -95,6 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9b7c7f44723541d2a0c0b6f1b1ee492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scale: 1
+  Offset: {x: 0, y: 0}
   Height: 10
   Midpoint: 10
   Width: 10
