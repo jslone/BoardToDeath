@@ -86,7 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scale: 1
   Offset: {x: 0, y: 0}
-  Height: .5
+  Height: .400000006
   Midpoint: 8
   Slope: .200000003
 --- !u!114 &11449054
