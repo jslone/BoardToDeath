@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Patience : MonoBehaviour {
+	public static float MAX = 100.0f;
 	private float _timeWillWait;
 	public float TimeWillWait {
 		get { return _timeWillWait; }
