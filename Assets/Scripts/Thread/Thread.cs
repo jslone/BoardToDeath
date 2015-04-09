@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Thread : MonoBehaviour {
-
+	public TimedEquations patience;
 	// Use this for initialization
 	void Start () {
 	
@@ -15,7 +15,13 @@ public class Thread : MonoBehaviour {
 
 	public void Cut() {
 		// Spawn soul
-		SoulSpawner.UseSpawner();
+		GameObject soul = SoulSpawner.UseSpawner();
+
+		// Set souls patience
+		if(soul) {
+			soul.GetComponent<Patience>().TimeWillWait = patience.value;
+		}
+
 		// Break thread
 		Destroy(gameObject);
 	}

@@ -13,16 +13,18 @@ public class SoulSpawner : Spawner {
 		_instance = this;
 	}
 
-	private void UseSpawnerLocal() {
+	private GameObject UseSpawnerLocal() {
 		GameObject soul = Spawn();
 		if(soul) {
 			line.Add(soul.GetComponent<CharacterLine>());
 		}
+		return soul;
 	}
 
-	public static void UseSpawner() {
+	public static GameObject UseSpawner() {
 		if(_instance) {
-			_instance.UseSpawnerLocal();
+			return _instance.UseSpawnerLocal();
 		}
+		return null;
 	}
 }
