@@ -25,6 +25,7 @@ public class Boat : MonoBehaviour {
 			Vector3 posInBoat = FrontOfBoat;
 			while(roomOnBoat > 0 && WaitLine.Length > 0) {
 				CharacterLine character = WaitLine.Remove();
+				character.GetComponent<Patience>().enabled = false;
 				character.enabled = false;
 
 				GameObject soul = character.gameObject;
