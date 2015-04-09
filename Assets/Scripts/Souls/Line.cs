@@ -19,6 +19,11 @@ public class Line : MonoBehaviour {
 	void Start () {
 	
 	}
+
+	void Update() {
+		Prune();
+		UpdatePositions();
+	}
 	
 	public void Add(CharacterLine character) {
 		Vector3 linePos = transform.position;

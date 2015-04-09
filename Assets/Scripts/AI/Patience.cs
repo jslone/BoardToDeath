@@ -2,15 +2,19 @@
 using System.Collections;
 
 public class Patience : MonoBehaviour {
+	private float _timeWillWait;
 	public float TimeWillWait {
-		set {
+		get { return _timeWillWait; }
+		set
+		{
+			_timeWillWait = value;
 			TTL = value;
 			started = true;
 		}
 	}
 
-	private bool started = false;
-	private float TTL = 0.0f;
+	public bool started = false;
+	public float TTL = 0.0f;
 
 	// Use this for initialization
 	void Start () {
