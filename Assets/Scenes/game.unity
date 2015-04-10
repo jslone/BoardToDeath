@@ -109,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 28497300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: -.75, z: 0}
+  m_LocalPosition: {x: 0, y: -.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1845436635}
@@ -159,7 +159,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 697059697}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 16
@@ -316,7 +316,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 612680017}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 8
@@ -583,7 +583,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 697059697}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 30
@@ -1216,6 +1216,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   text: {fileID: 610945482}
+--- !u!114 &612680017
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11466864, guid: 3ff4e109423814d6a8a312f5d7aad697,
+    type: 2}
+  m_PrefabInternal: {fileID: 2013215759}
+  m_Script: {fileID: 11500000, guid: 3c69322f6013a47789e40b39ac86f0aa, type: 3}
+--- !u!114 &697059697
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11466864, guid: 3ff4e109423814d6a8a312f5d7aad697,
+    type: 2}
+  m_PrefabInternal: {fileID: 1582836043}
+  m_Script: {fileID: 11500000, guid: 3c69322f6013a47789e40b39ac86f0aa, type: 3}
 --- !u!1 &739680323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1488,7 +1500,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 612680017}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 3
@@ -1670,7 +1682,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 697059697}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 10
@@ -3391,7 +3403,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 612680017}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 1
@@ -3473,7 +3485,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 697059697}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 20
@@ -3617,7 +3629,7 @@ Prefab:
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: WaitLine
       value: 
-      objectReference: {fileID: 201612144}
+      objectReference: {fileID: 612680017}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
       value: 5

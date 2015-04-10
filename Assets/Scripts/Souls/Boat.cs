@@ -8,7 +8,7 @@ public class Boat : MonoBehaviour {
 	public int Capacity;
 	public Vector3 FrontOfBoat;
 	public Vector3 Offset;
-
+    public int Cost;
 	private List<GameObject> onBoat = new List<GameObject>();
 
 	private bool approaching = true;

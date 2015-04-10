@@ -48,6 +48,7 @@ MonoBehaviour:
   Capacity: 3
   FrontOfBoat: {x: -2.5, y: .75, z: 0}
   Offset: {x: .5, y: 0, z: 0}
+  Cost: 5
 --- !u!114 &11427142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,7 +64,7 @@ MonoBehaviour:
   Offset: {x: 0, y: 0}
   Amplitude: 10
   Period: 10
-  PhaseOffset: 0
+  PhaseOffset: 1.57099998
 --- !u!114 &11480272
 MonoBehaviour:
   m_ObjectHideFlags: 1
