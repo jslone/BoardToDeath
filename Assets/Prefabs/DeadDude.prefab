@@ -28,6 +28,7 @@ GameObject:
   - 212: {fileID: 21282610}
   - 114: {fileID: 11444008}
   - 114: {fileID: 11430450}
+  - 114: {fileID: 11459412}
   m_Layer: 0
   m_Name: DeadDude
   m_TagString: Untagged
@@ -135,13 +136,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141598}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5980d22c8e3434193ba1ecfac8b4fd89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  started: 0
-  TTL: 0
+  TTL: 10
 --- !u!114 &11444008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -154,6 +154,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1
+--- !u!114 &11459412
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e750666ee87244d4be2d3ccaa34dd4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: {x: 10, y: 10}
+  Attack: {x: 5, y: 10}
 --- !u!212 &21270066
 SpriteRenderer:
   m_ObjectHideFlags: 1

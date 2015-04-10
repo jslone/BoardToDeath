@@ -2,20 +2,12 @@
 using System.Collections;
 
 public class Patience : MonoBehaviour {
-	public static float MAX = 100.0f;
-	private float _timeWillWait;
-	public float TimeWillWait {
-		get { return _timeWillWait; }
-		set
-		{
-			_timeWillWait = value;
-			TTL = value;
-			started = true;
-		}
-	}
+	public float LifeSpan { get; private set; }
+	public float TTL;
 
-	public bool started = false;
-	public float TTL = 0.0f;
+	void Awake() {
+		LifeSpan = TTL;
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -24,16 +16,14 @@ public class Patience : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(started) {
-			TTL -= Time.deltaTime;
-			if(TTL < 0) {
-				Rage();
-			}
+		TTL -= Time.deltaTime;
+		if(TTL < 0) {
+			Rage();
 		}
 	}
 
 	void Rage() {
-		Souls.monsters++;
+		Souls.AddMonster(GetComponent<RPGCharacter>());
 		Destroy(gameObject);
 	}
 }

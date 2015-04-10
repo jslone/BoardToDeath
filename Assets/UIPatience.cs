@@ -11,10 +11,8 @@ public class UIPatience : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(patience.started) {
-			Vector3 scale = transform.localScale;
-			scale.y = Mathf.Max(0,patience.TTL / Patience.MAX);
-			transform.localScale = scale;
-		}
+		Vector3 scale = transform.localScale;
+		scale.y = Mathf.Max(0,patience.TTL / patience.LifeSpan);
+		transform.localScale = scale;
 	}
 }
