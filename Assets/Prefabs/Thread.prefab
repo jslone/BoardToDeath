@@ -102,7 +102,7 @@ MonoBehaviour:
   Scale: 1
   Offset: {x: 0, y: .5}
   Height: .5
-  Midpoint: 10
+  Midpoint: 15
   Width: 10
 --- !u!114 &11482040
 MonoBehaviour:

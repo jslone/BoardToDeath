@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Movement: {fileID: 11484196}
   WaitLine: {fileID: 0}
-  Capacity: 5
+  Capacity: 3
   FrontOfBoat: {x: -2.5, y: .75, z: 0}
   Offset: {x: .5, y: 0, z: 0}
 --- !u!114 &11427142
