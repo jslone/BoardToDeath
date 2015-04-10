@@ -2282,6 +2282,10 @@ Prefab:
       propertyPath: WaitLine
       value: 
       objectReference: {fileID: 201612144}
+    - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
+      propertyPath: Capacity
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c96614c4a30934717b237453b1467fd5, type: 2}
   m_IsPrefabParent: 0
