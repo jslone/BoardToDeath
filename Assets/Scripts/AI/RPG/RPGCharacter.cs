@@ -19,7 +19,6 @@ public class RPGCharacter : MonoBehaviour {
 	}
 
 	public static void Fight(RPGCharacter c1, RPGCharacter c2) {
-
 		if(c1.Dead || c2.Dead) return;
 
 		float atk1 = Random.Range(c1.Attack.x,c1.Attack.y);
