@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Patience : MonoBehaviour {
-	public static float MAX = 100.0f;
+	public static float MAX = 30.0f; // TODO: set max patience per soul type
 	private float _timeWillWait;
 	public float TimeWillWait {
 		get { return _timeWillWait; }

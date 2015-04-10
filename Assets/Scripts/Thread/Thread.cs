@@ -20,6 +20,7 @@ public class Thread : MonoBehaviour {
 		// Set souls patience
 		if(soul) {
 			soul.GetComponent<Patience>().TimeWillWait = patience.value;
+			Debug.Log(patience.value);
 		}
 
 		// Break thread
