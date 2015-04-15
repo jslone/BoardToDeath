@@ -5,23 +5,47 @@ using System.Collections.Generic;
 public class Boat : MonoBehaviour {
 	public TimedEquations Movement;
 	public Line WaitLine;
-	public int Capacity;
+	public float Capacity;
 	public Vector3 FrontOfBoat;
 	public Vector3 Offset;
-    public int Cost;
+    public float Cost;
+	public bool Docked
+	{
+		get { return !Movement.enabled; }
+		set
+		{
+			Movement.Reset();
+			Movement.enabled = !value;
+		}
+	}
+	public int UpgradeLevel;
+
+	private static int MAX_UPGRADE_LEVEL = 4;
 	private List<GameObject> onBoat = new List<GameObject>();
+	private Animator anim;
+
 
 	private bool approaching = true;
 	// Use this for initialization
 	void Start () {
-	
+		anim = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(approaching && Movement.delta < 0) {
+		// Docked for a frame, time to take off
+		if(Docked) {
+			anim.SetInteger("level",UpgradeLevel);
+			Docked = false;
+		} 
+		// Reached the dock and ready for boarding
+		else if(approaching && Movement.delta < 0) {
+			Docked = true;
+		}
 
-			int roomOnBoat = Capacity;
+		// Stuff to do while docked
+		if(Docked) {
+			int roomOnBoat = Mathf.RoundToInt(Capacity);
 			Vector3 posInBoat = FrontOfBoat;
 			while(roomOnBoat > 0 && WaitLine.Length > 0) {
 				CharacterLine character = WaitLine.Remove();
@@ -40,6 +64,8 @@ public class Boat : MonoBehaviour {
 			}
 			approaching = false;
 		}
+
+		// Stuff to do at end of road
 		if(!approaching && Movement.delta > 0) {
 
 			foreach(GameObject soul in onBoat) {
@@ -49,5 +75,14 @@ public class Boat : MonoBehaviour {
 			onBoat.Clear();
 			approaching = true;
 		}
+	}
+
+	public bool CanUpgrade() {
+		return UpgradeLevel < MAX_UPGRADE_LEVEL && Cost <= Souls.souls && (!anim || anim.GetInteger("level") == UpgradeLevel);
+	}
+
+	public void Upgrade() {
+		gameObject.SetActive(true);
+		UpgradeLevel++;
 	}
 }

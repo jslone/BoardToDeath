@@ -11,9 +11,7 @@ public class TimedEquations : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		lastValue = equation.eval(0);
-		value = lastValue;
-		time = 0;
+		Reset();
 	}
 	
 	// Update is called once per frame
@@ -21,5 +19,11 @@ public class TimedEquations : MonoBehaviour {
 		lastValue = value;
 		time += Time.deltaTime;
 		value = equation.eval(time);
+	}
+
+	public void Reset() {
+		lastValue = equation.eval(0);
+		value = lastValue;
+		time = 0;
 	}
 }
