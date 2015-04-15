@@ -19,8 +19,8 @@ public class Boat : MonoBehaviour {
 		}
 	}
 	public int UpgradeLevel;
+	public static int MAX_UPGRADE_LEVEL = 4;
 
-	private static int MAX_UPGRADE_LEVEL = 4;
 	private List<GameObject> onBoat = new List<GameObject>();
 	private Animator anim;
 
