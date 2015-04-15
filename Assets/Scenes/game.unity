@@ -2757,14 +2757,6 @@ Prefab:
       propertyPath: m_Name
       value: BoardingLine 0
       objectReference: {fileID: 0}
-    - target: {fileID: 21208348, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137642, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
   m_IsPrefabParent: 0
@@ -3559,18 +3551,6 @@ Prefab:
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Midpoint
-      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
