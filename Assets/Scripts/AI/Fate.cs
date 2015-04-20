@@ -6,6 +6,7 @@ public class Fate : Commandable {
 	public float Offset = 0.5f;
 
 	public ThreadTarget Target;
+	public AudioSource CutSound;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,7 @@ public class Fate : Commandable {
 				if(transform.localScale.x < 0) {
 					Flip();
 				}
+				CutSound.Play();
 				Target.Cut();
 				Target = null;
 			}
