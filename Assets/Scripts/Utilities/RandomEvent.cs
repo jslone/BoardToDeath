@@ -6,7 +6,7 @@ public abstract class RandomEvent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float p = probability.value * Time.deltaTime;
+		float p = probability.value * GameTime.deltaTime.time;
 		if(Random.value < p) {
 			Event();
 		}

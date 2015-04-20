@@ -12,7 +12,7 @@ public class MoveCharacter : MonoBehaviour {
 	public void Move(Vector3 target) {
 		Vector3 pos = transform.position;
 		
-		Vector3 delta = (target - pos).normalized * Speed * Time.deltaTime;
+		Vector3 delta = (target - pos).normalized * Speed * GameTime.deltaTime.unscaled;
 
 		delta = Vector3.ClampMagnitude(delta, (target - pos).magnitude);
 		

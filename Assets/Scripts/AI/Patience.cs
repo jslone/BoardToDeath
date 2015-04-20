@@ -16,7 +16,7 @@ public class Patience : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		TTL -= Time.deltaTime;
+		TTL -= GameTime.deltaTime.time;
 		if(TTL < 0) {
 			Rage();
 		}

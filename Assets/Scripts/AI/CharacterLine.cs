@@ -16,7 +16,7 @@ public class CharacterLine : MonoBehaviour {
 			Vector3 target = targets.First.Value;
 			Vector3 pos = transform.position;
 			
-			Vector3 delta = (target - pos).normalized * Speed * Time.deltaTime;
+			Vector3 delta = (target - pos).normalized * Speed * GameTime.deltaTime.time;
 			
 			delta = Vector3.ClampMagnitude(delta, (target - pos).magnitude);
 			

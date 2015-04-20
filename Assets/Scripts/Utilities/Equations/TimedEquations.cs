@@ -2,8 +2,6 @@
 using System.Collections;
 
 public class TimedEquations : MonoBehaviour {
-	public static bool paused = false;
-	public static float timeScale = 1.0f;
 	public Equation equation;
 
 	private float time;
@@ -19,7 +17,7 @@ public class TimedEquations : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		lastValue = value;
-		time += paused ? 0 : timeScale * Time.deltaTime;
+		time += GameTime.deltaTime.time;
 		value = equation.eval(time);
 	}
 
