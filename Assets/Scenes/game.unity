@@ -865,7 +865,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 0, y: .5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 5}
+  m_SizeDelta: {x: 50, y: 10}
   m_Pivot: {x: 0, y: .5}
 --- !u!114 &468390715
 MonoBehaviour:
@@ -2707,7 +2707,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -25, y: 25}
+  m_AnchoredPosition: {x: -25, y: 20}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &1582836043
@@ -2756,14 +2756,6 @@ Prefab:
     - target: {fileID: 137642, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
       propertyPath: m_Name
       value: BoardingLine 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21208348, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 137642, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
@@ -3365,7 +3357,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: .5}
   m_AnchorMax: {x: 0, y: .5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 50, y: 5}
+  m_SizeDelta: {x: 50, y: 10}
   m_Pivot: {x: 0, y: .5}
 --- !u!114 &1885522762
 MonoBehaviour:
@@ -3559,18 +3551,6 @@ Prefab:
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Midpoint
-      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
