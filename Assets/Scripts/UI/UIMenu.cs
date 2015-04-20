@@ -16,5 +16,6 @@ public class UIMenu : MonoBehaviour {
 
 	public void Toggle() {
 		menu.SetActive(!menu.activeSelf);
+		TimedEquations.paused = !TimedEquations.paused;
 	}
 }
