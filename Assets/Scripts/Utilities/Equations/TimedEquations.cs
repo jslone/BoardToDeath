@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class TimedEquations : MonoBehaviour {
+	public static bool paused;
 	public Equation equation;
 
 	private float time;
@@ -17,7 +18,7 @@ public class TimedEquations : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		lastValue = value;
-		time += Time.deltaTime;
+		time += paused ? 0 : Time.deltaTime;
 		value = equation.eval(time);
 	}
 
