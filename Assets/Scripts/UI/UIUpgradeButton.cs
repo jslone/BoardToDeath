@@ -4,8 +4,7 @@ using System.Collections;
 
 public class UIUpgradeButton : MonoBehaviour {
 	public Button button;
-	public int boatId;
-	public Upgrades upgrades;
+	public Upgradeable upgrade;
 
 	// Use this for initialization
 	void Start () {
@@ -14,10 +13,10 @@ public class UIUpgradeButton : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		button.interactable = upgrades.Boats[boatId].CanUpgrade();
+		button.interactable = upgrade.CanUpgrade();
 	}
 
 	public void Upgrade() {
-		upgrades.BuyBoatUpgrade(boatId);
+		upgrade.BuyUpgrade();
 	}
 }

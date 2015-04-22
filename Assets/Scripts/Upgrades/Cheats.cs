@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Upgrades : MonoBehaviour {
+public class Cheats : MonoBehaviour {
 	public Boat[] Boats;
 
 	// Use this for initialization
@@ -12,25 +12,18 @@ public class Upgrades : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            BuyBoatUpgrade(0);
+			Boats[0].BuyUpgrade();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            BuyBoatUpgrade(1);
+			Boats[1].BuyUpgrade();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            BuyBoatUpgrade(2);
+			Boats[2].BuyUpgrade();
         }
 		if(Input.GetKey(KeyCode.BackQuote)) {
 			Souls.souls++;
 		}
 	}
-
-    public void BuyBoatUpgrade(int boatId) {
-		if(Boats[boatId].CanUpgrade()) {
-			Souls.souls -= Mathf.RoundToInt(Boats[boatId].Cost);
-			Boats[boatId].Upgrade();
-		}
-    }
 }
