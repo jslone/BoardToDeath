@@ -11,7 +11,7 @@ public class Upgradeable : MonoBehaviour {
 
 
 	public bool CanUpgrade() {
-		return UpgradeLevel < Costs.Length && Cost <= Souls.souls && (!animator || animator.GetInteger("level") == UpgradeLevel);
+		return UpgradeLevel < Costs.Length && Cost <= Souls.souls && (!gameObject.activeSelf || animator.GetInteger("level") == UpgradeLevel);
 	}
 
 	public void BuyUpgrade() {
