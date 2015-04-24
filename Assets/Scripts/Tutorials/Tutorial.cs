@@ -21,7 +21,8 @@ public abstract class Tutorial : MonoBehaviour {
 	
 	}
 
-	public abstract void ProceedTutorial();
+	public abstract void UpdateProgress();
+	protected abstract void ProceedTutorial();
 
 	IEnumerator WaitForSecondsAndProceed(float t) {
 		yield return new WaitForSeconds(t);
@@ -30,6 +31,11 @@ public abstract class Tutorial : MonoBehaviour {
 
 	protected void WaitAndProceed(float t) {
 		StartCoroutine(WaitForSecondsAndProceed(t));
+	}
+
+	protected void CompleteTutorial(int level) {
+		// TODO: go back to Level Select scene
+		Debug.Log("Finished tutorial level " + level.ToString());
 	}
 
 	// Create text message

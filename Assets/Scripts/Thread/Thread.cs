@@ -13,7 +13,7 @@ public class Thread : MonoBehaviour {
 	
 	}
 
-	public void Cut() {
+	public virtual void Cut() {
 		// Spawn soul
 		GameObject soul = SoulSpawner.UseSpawner();
 
