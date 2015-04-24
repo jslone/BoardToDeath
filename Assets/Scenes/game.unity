@@ -2488,6 +2488,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Size: 5
+--- !u!1001 &1186277654
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -9.36999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 435178, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1197942899
 Prefab:
   m_ObjectHideFlags: 0

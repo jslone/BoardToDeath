@@ -18,8 +18,12 @@ public class Patience : MonoBehaviour {
 	void Update () {
 		TTL -= GameTime.deltaTime.time;
 		if(TTL < 0) {
-			Rage();
+			Turn();
 		}
+	}
+
+	void Turn() {
+		GetComponent<Animator>().SetTrigger("monster");
 	}
 
 	void Rage() {

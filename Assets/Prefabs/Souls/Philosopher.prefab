@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 11444008}
   - 114: {fileID: 11430450}
   - 114: {fileID: 11459412}
+  - 95: {fileID: 9501648}
   m_Layer: 0
   m_Name: Philosopher
   m_TagString: Untagged
@@ -118,6 +119,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 422804}
   m_RootOrder: 0
+--- !u!95 &9501648
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141598}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 99dba63ad0d45482281ac071bd83e070, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11404126
 MonoBehaviour:
   m_ObjectHideFlags: 1

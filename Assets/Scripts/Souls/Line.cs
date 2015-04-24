@@ -62,7 +62,7 @@ public class Line : MonoBehaviour {
 		LinkedListNode<CharacterLine> node = Queue.First;
 		while(node != Queue.Last) {
 			LinkedListNode<CharacterLine> tmp = node.Next;
-			if(!node.Value) {
+			if(!node.Value || !node.Value.enabled) {
 				Queue.Remove(node);
 			}
 			node = tmp;
