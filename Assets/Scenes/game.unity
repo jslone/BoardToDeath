@@ -4427,7 +4427,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452670, guid: 79b8ad620600745de876fab35efd9902, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.04999995
       objectReference: {fileID: 0}
     - target: {fileID: 452670, guid: 79b8ad620600745de876fab35efd9902, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4453,21 +4453,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11454352, guid: 79b8ad620600745de876fab35efd9902, type: 2}
-      propertyPath: CutSound
-      value: 
-      objectReference: {fileID: 1317763796}
-    - target: {fileID: 11416450, guid: 79b8ad620600745de876fab35efd9902, type: 2}
-      propertyPath: Costs.Array.data[1]
-      value: 15
+    - target: {fileID: 452670, guid: 79b8ad620600745de876fab35efd9902, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .349999994
       objectReference: {fileID: 0}
-    - target: {fileID: 11416450, guid: 79b8ad620600745de876fab35efd9902, type: 2}
-      propertyPath: Costs.Array.data[2]
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 11416450, guid: 79b8ad620600745de876fab35efd9902, type: 2}
-      propertyPath: Costs.Array.data[3]
-      value: 60
+    - target: {fileID: 452670, guid: 79b8ad620600745de876fab35efd9902, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .349999994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79b8ad620600745de876fab35efd9902, type: 2}

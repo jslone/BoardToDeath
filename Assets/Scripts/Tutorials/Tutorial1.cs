@@ -29,7 +29,6 @@ public class Tutorial1 : Tutorial {
 				break;
 
 			case 3:
-				pos.x = -4.5f;
 				// TODO: add animated pointer in addition to highlighting thread
 				Thread1.GetComponent<UISelectable>().Highlight(true);
 				CreateMessage(pos, "This is a thread of life. It represents a human life in the world of living.");
@@ -53,7 +52,6 @@ public class Tutorial1 : Tutorial {
 				break;
 
 			case 6:
-				pos.x = -4.5f;
 				GameTime.paused = true;
 				Thread1.GetComponent<UISelectable>().Highlight(true);
 				CreateMessage(pos, "See the tear in the thread? Cutting threads when Atropos' scissors line up with the optimal point results in happier souls.");
@@ -70,7 +68,7 @@ public class Tutorial1 : Tutorial {
 
 			// On first cut
 			case 8:
-				pos = new Vector3(4.5f, 0, 0);
+				pos = new Vector3(4.75f, 0, 0);
 				GameTime.paused = true;
 				Destroy(currentMessage);
 				CreateMessage(pos, "That's it! Cutting a thread spawns a soul. The closer to the optimal position, the greater the soul's patience.");
