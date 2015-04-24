@@ -30,7 +30,7 @@ GameObject:
   - 114: {fileID: 11430450}
   - 114: {fileID: 11459412}
   m_Layer: 0
-  m_Name: DeadDude
+  m_Name: Philosopher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
