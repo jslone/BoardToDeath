@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class CharacterLine : MonoBehaviour {
+	public ParticleSystem particles;
 	public float Speed = 1.0f;
 	public LinkedList<Vector3> targets = new LinkedList<Vector3>();
 	
@@ -37,6 +38,9 @@ public class CharacterLine : MonoBehaviour {
 	}
 	
 	public void Move(Vector3 target) {
+		if((transform.position - target).sqrMagnitude > 0.1f) {
+			particles.Play();
+		}
 		transform.position = target;
 		//targets.AddLast(target);
 		
