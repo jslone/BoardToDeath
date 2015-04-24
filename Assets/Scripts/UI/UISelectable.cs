@@ -3,7 +3,7 @@ using System.Collections;
 
 public class UISelectable : MonoBehaviour {
 	public Renderer spriteRenderer;
-	const float HOVER_OPACITY = 0.5f;
+	public float HoverOpacity = 0.5f;
 	Color oldColor;
 
 	// Use this for initialization
@@ -15,13 +15,22 @@ public class UISelectable : MonoBehaviour {
 	}
 
 	void OnMouseEnter() {
-		oldColor = spriteRenderer.material.color;
-		Color newColor = oldColor;
-		newColor.a = HOVER_OPACITY;
-		spriteRenderer.material.color = newColor;
+		Highlight(true);
 	}
 
 	void OnMouseExit() {
-		spriteRenderer.material.color = oldColor;
+		Highlight(false);
+	}
+
+	// highlight sprite by changing transparency
+	public void Highlight(bool on) {
+		if (on) {
+			oldColor = spriteRenderer.material.color;
+			Color newColor = oldColor;
+			newColor.a = HoverOpacity;
+			spriteRenderer.material.color = newColor;
+		} else {
+			spriteRenderer.material.color = oldColor;
+		}
 	}
 }
