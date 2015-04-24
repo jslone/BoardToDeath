@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class Line : MonoBehaviour {
 	private LinkedList<CharacterLine> Queue = new LinkedList<CharacterLine>();
 	public float Space;
-	public int Capacity;
 	public int Length
 	{
 		get
@@ -30,11 +29,6 @@ public class Line : MonoBehaviour {
 		linePos.x += Space * Queue.Count;
 
 		Queue.AddLast(character);
-
-		Vector3 lineEnd = transform.position;
-		lineEnd.x += Space * Capacity;
-
-		character.Move(lineEnd);
 		character.Move(linePos);
 	}
 
