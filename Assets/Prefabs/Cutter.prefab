@@ -145,7 +145,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6fd7ce3219245ed8e8357d338abea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cost: 0
+  Costs:
+  - 0
+  - 0
+  - 0
+  - 0
   UpgradeLevel: 0
   animator: {fileID: 9510990}
 --- !u!114 &11454352
@@ -161,7 +165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {fileID: 11465880}
   Offset: .5
-  Target: {fileID: 0}
   CutSound: {fileID: 8208752}
 --- !u!114 &11465880
 MonoBehaviour:
@@ -185,7 +188,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0d96aa0c38baf4eb1a1ac4b90731e801, type: 2}
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
