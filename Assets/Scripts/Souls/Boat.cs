@@ -45,6 +45,7 @@ public class Boat : Upgradeable {
 			while(roomOnBoat > 0 && WaitLine.Length > 0) {
 				CharacterLine character = WaitLine.Remove();
 				character.GetComponent<Patience>().enabled = false;
+				character.GetComponent<Animator>().enabled = false;
 				character.enabled = false;
 
 				GameObject soul = character.gameObject;

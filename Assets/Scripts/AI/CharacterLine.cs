@@ -37,7 +37,8 @@ public class CharacterLine : MonoBehaviour {
 	}
 	
 	public void Move(Vector3 target) {
-		targets.AddLast(target);
+		transform.position = target;
+		//targets.AddLast(target);
 		
 	}
 	
