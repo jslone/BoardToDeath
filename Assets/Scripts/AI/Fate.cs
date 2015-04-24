@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Fate : Commandable {
 	public MoveCharacter move;
 	public float Offset = 0.5f;
 
-	public ThreadTarget Target;
+	private Queue<ThreadTarget> Targets = new Queue<ThreadTarget>();
 	public AudioSource CutSound;
 
 	// Use this for initialization
@@ -15,8 +16,8 @@ public class Fate : Commandable {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if(Target) {
+		if(Targets.Count > 0) {
+			ThreadTarget Target = Targets.Peek();
 			Vector3 target = move.transform.position;
 			float distance = Target.transform.position.x - target.x;
 			distance += -Mathf.Sign(distance) * Offset;
@@ -28,7 +29,7 @@ public class Fate : Commandable {
 					Flip ();
 				CutSound.Play();
 				Target.Cut();
-				Target = null;
+				Targets.Dequeue();
 			}
 		}
 	}
@@ -42,7 +43,10 @@ public class Fate : Commandable {
 	public override void UseTarget (Target t) {
 		ThreadTarget target = t as ThreadTarget;
 		if(target) {
-			Target = target;
+			if(Targets.Contains(target)) {
+				Targets.Clear();
+			}
+			Targets.Enqueue(target);
 		}
 	}
 }
