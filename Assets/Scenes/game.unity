@@ -3679,7 +3679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rTrans: {fileID: 1687550412}
-  speed: 800
+  speed: 10
   loc: 1
   positions:
   - 800
