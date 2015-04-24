@@ -21,11 +21,9 @@ public class Upgradeable : MonoBehaviour {
 		}
 	}
 
-	public void Upgrade() {
-		if(CanUpgrade()) {
-			gameObject.SetActive(true);
-			UpgradeLevel++;
-		}
+	private void Upgrade() {
+		gameObject.SetActive(true);
+		UpgradeLevel++;
 	}
 
 	void Update() {
