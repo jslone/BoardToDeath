@@ -18,13 +18,14 @@ public class Fate : Commandable {
 
 		if(Target) {
 			Vector3 target = move.transform.position;
-			target.x = Target.transform.position.x + Offset;
+			float distance = Target.transform.position.x - target.x;
+			distance += -Mathf.Sign(distance) * Offset;
+			target.x += distance;
 			move.Move(target);
 
-			if(Mathf.Abs((Target.transform.position.x + Offset) - transform.position.x) < 0.01f) {
-				if(transform.localScale.x < 0) {
-					Flip();
-				}
+			if(Mathf.Abs(distance) < 0.01f) {
+				if((Target.transform.position.x - transform.position.x)*transform.localScale.x > 0)
+					Flip ();
 				CutSound.Play();
 				Target.Cut();
 				Target = null;
