@@ -12,10 +12,18 @@ public class Souls : MonoBehaviour {
 
 	public RPGCharacter world;
 	public float AttackRate;
+	private float timeSinceAttack;
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating("RunAttacks",AttackRate,AttackRate);
+	}
+
+	void Update() {
+		timeSinceAttack += GameTime.deltaTime.time;
+		if(timeSinceAttack >= AttackRate) {
+			RunAttacks();
+			timeSinceAttack -= AttackRate;
+		}
 	}
 
 	public static void AddMonster(RPGCharacter monster) {
