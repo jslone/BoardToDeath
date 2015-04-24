@@ -44,6 +44,7 @@ public class Boat : Upgradeable {
 			Vector3 posInBoat = FrontOfBoat;
 			while(roomOnBoat > 0 && WaitLine.Length > 0) {
 				CharacterLine character = WaitLine.Remove();
+				if(!character.enabled) continue;
 				character.GetComponent<Patience>().enabled = false;
 				character.GetComponent<Animator>().enabled = false;
 				character.enabled = false;
