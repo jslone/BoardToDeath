@@ -51,6 +51,8 @@ MonoBehaviour:
   patience: {fileID: 11459220}
   renderer: {fileID: 21264102}
   potentialMonster: {fileID: 11495334}
+  goodColor: {r: 1, g: 1, b: 1, a: 1}
+  badColor: {r: .666666687, g: .274509788, b: .274509788, a: 1}
 --- !u!114 &11432638
 MonoBehaviour:
   m_ObjectHideFlags: 1

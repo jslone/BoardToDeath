@@ -8,6 +8,8 @@ public class Thread : MonoBehaviour {
 	public SpriteRenderer renderer;
 	public RPGCharacter potentialMonster;
 
+	public Color goodColor;
+	public Color badColor;
 	private bool monsterSpawned = false;
 
 	// Use this for initialization
@@ -21,7 +23,7 @@ public class Thread : MonoBehaviour {
 			Souls.AddMonster(potentialMonster);
 			monsterSpawned = true;
 		}
-		renderer.color = Color.Lerp(Color.white, Color.red, 2*position.value/positionEquation.Height - 1.0f);
+		renderer.color = Color.Lerp(goodColor, badColor, 2.5f*position.value/positionEquation.Height - 1.25f);
 	}
 
 	public virtual void Cut() {
