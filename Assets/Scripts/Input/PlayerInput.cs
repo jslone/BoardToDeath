@@ -12,7 +12,7 @@ public class PlayerInput : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// Select or command
-		if(Input.GetMouseButtonDown(0)) {
+		if(!GameTime.paused && Input.GetMouseButtonDown(0)) {
 			Vector2 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			Collider2D col = Physics2D.OverlapPoint(point);
 
