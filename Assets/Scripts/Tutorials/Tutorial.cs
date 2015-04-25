@@ -21,7 +21,10 @@ public abstract class Tutorial : MonoBehaviour {
 	
 	}
 
-	public abstract void UpdateProgress();
+	public void UpdateProgress() {
+		UpdateProgress(1);
+	}
+	public abstract void UpdateProgress(int count);
 	protected abstract void ProceedTutorial();
 
 	IEnumerator WaitForSecondsAndProceed(float t) {

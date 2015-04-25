@@ -851,8 +851,8 @@ Transform:
   m_LocalPosition: {x: -4, y: 4, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
-  - {fileID: 442477896}
   - {fileID: 1402463380}
+  - {fileID: 442477896}
   - {fileID: 1496706597}
   m_Father: {fileID: 869890484}
   m_RootOrder: 1
@@ -893,7 +893,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
@@ -1311,7 +1311,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0892769e90b852479ac3d6f59115586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positionEquation: {fileID: 0}
+  position: {fileID: 0}
   patience: {fileID: 783099091}
+  renderer: {fileID: 0}
+  potentialMonster: {fileID: 0}
+  goodColor: {r: 0, g: 0, b: 0, a: 0}
+  badColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &783099090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2015,7 +2021,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
@@ -2328,7 +2334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 24
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Height
@@ -2654,7 +2660,6 @@ MonoBehaviour:
   Thread2: {fileID: 781101522}
   Thread3: {fileID: 299879083}
   Atropos: {fileID: 1317763795}
-  Spawner: {fileID: 1765291809}
 --- !u!1 &1745897090
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,7 +6,6 @@ public class Tutorial1 : Tutorial {
 	public GameObject Thread2;
 	public GameObject Thread3;
 	public GameObject Atropos;
-	public SoulSpawner Spawner;
 
 	GameObject currentMessage;
 	int cutThreads = 0;
@@ -68,7 +67,7 @@ public class Tutorial1 : Tutorial {
 
 			// On first cut
 			case 8:
-				pos = new Vector3(4.75f, 0, 0);
+				pos = new Vector3(4.25f, 0, 0);
 				GameTime.paused = true;
 				Destroy(currentMessage);
 				CreateMessage(pos, "That's it! Cutting a thread spawns a soul. The closer to the optimal position, the greater the soul's patience.");
@@ -83,7 +82,7 @@ public class Tutorial1 : Tutorial {
 			case 10:
 				GameTime.paused = true;
 				Destroy(currentMessage);
-				currentMessage = CreateMessage(pos, "Well done, Hades. I hope you're enjoying yourself! Let's move on.");
+				CreateMessage(pos, "Well done, Hades. I hope you're enjoying yourself! Let's move on.");
 				break;
 
 			default:
@@ -93,12 +92,10 @@ public class Tutorial1 : Tutorial {
 	}
 
 	// Successfully cut thread
-	public override void UpdateProgress() {
-		switch (++cutThreads) {
-			case 1:
-			case 7:
-				ProceedTutorial();
-				break;
+	public override void UpdateProgress(int count) {
+		cutThreads += count;
+		if (cutThreads == 1 || cutThreads == 7) {
+			ProceedTutorial();
 		}
 	}
 

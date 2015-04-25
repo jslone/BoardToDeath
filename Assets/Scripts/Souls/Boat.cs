@@ -19,7 +19,7 @@ public class Boat : Upgradeable {
 		}
 	}
 
-	private List<GameObject> onBoat = new List<GameObject>();
+	protected List<GameObject> onBoat = new List<GameObject>();
 
 	private bool approaching = true;
 	// Use this for initialization
@@ -30,9 +30,9 @@ public class Boat : Upgradeable {
 	void Update () {
 		// Docked for a frame, time to take off
 		if(Docked) {
-			animator.SetInteger("level",UpgradeLevel);
+			animator.SetInteger("level", UpgradeLevel);
 			Docked = false;
-		} 
+		}
 		// Reached the dock and ready for boarding
 		else if(approaching && Movement.delta < 0) {
 			Docked = true;
@@ -64,13 +64,16 @@ public class Boat : Upgradeable {
 
 		// Stuff to do at end of road
 		if(!approaching && Movement.delta > 0) {
-
-			foreach(GameObject soul in onBoat) {
-				Destroy(soul);
-			}
-			Souls.souls += onBoat.Count;
-			onBoat.Clear();
+			UnloadBoat();
 			approaching = true;
 		}
+	}
+
+	protected virtual void UnloadBoat() {
+		foreach(GameObject soul in onBoat) {
+			Destroy(soul);
+		}
+		Souls.souls += onBoat.Count;
+		onBoat.Clear();
 	}
 }
