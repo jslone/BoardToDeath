@@ -168,6 +168,7 @@ GameObject:
   - 114: {fileID: 115034286}
   - 114: {fileID: 115034285}
   - 114: {fileID: 115034284}
+  - 114: {fileID: 115034288}
   m_Layer: 5
   m_Name: TUTORIAL 2
   m_TagString: Untagged
@@ -290,6 +291,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 115034282}
+--- !u!114 &115034288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 115034282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eabc19201b6bb4fbfdb2981de8170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 115034285}
+  difficulty: 1
 --- !u!1 &253651247
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,6 +968,7 @@ GameObject:
   - 114: {fileID: 900658835}
   - 114: {fileID: 900658834}
   - 114: {fileID: 900658833}
+  - 114: {fileID: 900658837}
   m_Layer: 5
   m_Name: TUTORIAL 1
   m_TagString: Untagged
@@ -1076,6 +1091,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 900658831}
+--- !u!114 &900658837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 900658831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eabc19201b6bb4fbfdb2981de8170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 900658834}
+  difficulty: 0
 --- !u!1 &945656417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1567,7 @@ GameObject:
   - 114: {fileID: 1752108467}
   - 114: {fileID: 1752108466}
   - 114: {fileID: 1752108465}
+  - 114: {fileID: 1752108469}
   m_Layer: 5
   m_Name: TUTORIAL 3
   m_TagString: Untagged
@@ -1661,6 +1690,19 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1752108463}
+--- !u!114 &1752108469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1752108463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9eabc19201b6bb4fbfdb2981de8170a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 1752108466}
+  difficulty: 2
 --- !u!1 &1780293473
 GameObject:
   m_ObjectHideFlags: 0
