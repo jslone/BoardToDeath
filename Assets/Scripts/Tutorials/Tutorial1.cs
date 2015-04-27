@@ -67,7 +67,7 @@ public class Tutorial1 : Tutorial {
 
 			// On first cut
 			case 8:
-				pos = new Vector3(4.25f, 0, 0);
+				pos = new Vector3(3f, 0, 0);
 				GameTime.paused = true;
 				Destroy(currentMessage);
 				CreateMessage(pos, "That's it! Cutting a thread spawns a soul. The closer to the optimal position, the greater the soul's patience.");

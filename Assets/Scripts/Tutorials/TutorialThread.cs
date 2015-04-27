@@ -3,6 +3,10 @@ using System.Collections;
 
 public class TutorialThread : Thread {
 
+	void Update () {
+		renderer.color = Color.Lerp(goodColor, badColor, 2.5f*position.value/positionEquation.Height - 1.25f);
+	}
+
 	public override void Cut() {
 		// Spawn soul
 		GameObject soul = SoulSpawner.UseSpawner();

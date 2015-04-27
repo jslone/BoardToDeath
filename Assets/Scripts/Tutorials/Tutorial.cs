@@ -37,8 +37,9 @@ public abstract class Tutorial : MonoBehaviour {
 	}
 
 	protected void CompleteTutorial(int level) {
-		// TODO: go back to Level Select scene
+		// TODO: unlock next tutorial level in PlayerPrefs
 		Debug.Log("Finished tutorial level " + level.ToString());
+		Application.LoadLevel("title");
 	}
 
 	// Create text message

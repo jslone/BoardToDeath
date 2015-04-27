@@ -7,7 +7,7 @@ public class Tutorial2 : Tutorial {
 	public GameObject BoardingLine3;
 
 	GameObject currentMessage;
-	int queuedSouls = 0;
+	int progressedSouls = 0;
 
 	// Continue in tutorial
 	protected override void ProceedTutorial() {
@@ -44,7 +44,7 @@ public class Tutorial2 : Tutorial {
 			case 4:
 				SoulSpawner.UseSpawner();
 				pos.x = -4f;
-				// TODO: show soul turning into monster?
+				// TODO: show soul turning into monster? Also, attach patience to souls
 				CreateMessage(pos, "Each soul has a patience meter. Make sure that the souls are loaded onto the boats before they run out of patience!");
 				break;
 
@@ -72,9 +72,8 @@ public class Tutorial2 : Tutorial {
 
 	// Successfully queued or shipped soul
 	public override void UpdateProgress(int count) {
-		queuedSouls += count;
-		Debug.Log(queuedSouls);
-		if (queuedSouls <= 2 || queuedSouls >= 24) { // loaded 12 boats total
+		progressedSouls += count;
+		if (progressedSouls <= 2 || progressedSouls >= 24) { // loaded 12 boats total
 			ProceedTutorial();
 		}
 	}

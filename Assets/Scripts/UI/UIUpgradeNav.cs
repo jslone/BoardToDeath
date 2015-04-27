@@ -15,7 +15,9 @@ public class UIUpgradeNav : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = names[upgrades.loc];
+		if (upgrades.loc < names.Length) {
+			text.text = names[upgrades.loc];
+		}
 	}
 
 	public void Navigate() {
