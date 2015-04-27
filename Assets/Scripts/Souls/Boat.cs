@@ -48,12 +48,14 @@ public class Boat : Upgradeable {
 				character.GetComponent<Patience>().enabled = false;
 				character.GetComponent<Animator>().enabled = false;
 				character.enabled = false;
+				character.transform.FindChild("Status").gameObject.SetActive(false);
 
 				GameObject soul = character.gameObject;
 				Vector3 scale = soul.transform.localScale;
 				soul.transform.parent = transform;
 				soul.transform.localScale = scale;
-				soul.transform.localPosition = posInBoat;
+
+				character.Teleport(transform.TransformPoint(posInBoat));
 				onBoat.Add(soul);
 
 				roomOnBoat--;
