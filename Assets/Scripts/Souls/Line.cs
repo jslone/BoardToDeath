@@ -29,7 +29,7 @@ public class Line : MonoBehaviour {
 		linePos.x += Space * Queue.Count;
 
 		Queue.AddLast(character);
-		character.Move(linePos);
+		character.Teleport(linePos);
 	}
 
 	public CharacterLine Remove() {
