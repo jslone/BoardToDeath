@@ -3,7 +3,8 @@ using System.Collections;
 
 public enum ButtonAction {
 	PLAY,
-	TUTORIAL,
+	TUTORIAL1,
+	TUTORIAL2,
 	QUIT
 }
 
@@ -15,8 +16,11 @@ public class UIButton : MonoBehaviour {
 			case ButtonAction.PLAY:
 				Application.LoadLevel("game");	// game scene
 				break;
-			case ButtonAction.TUTORIAL:
-				Application.LoadLevel("tutorial1");	// title scene
+			case ButtonAction.TUTORIAL1:
+				Application.LoadLevel("tutorial1");	// thread cutting tutorial
+				break;
+			case ButtonAction.TUTORIAL2:
+				Application.LoadLevel("tutorial2");	// boat tutorial
 				break;
 /* 			case ButtonAction.CREDITS:
 				Application.LoadLevel("credits");	// credits scene
