@@ -28,6 +28,22 @@ public class Patience : MonoBehaviour {
 
 	void Rage() {
 		Souls.AddMonster(GetComponent<RPGCharacter>());
-		Destroy(gameObject);
+		foreach(TimedEquations eq in GetComponents<TimedEquations>())
+		{
+			eq.enabled = true;
+		}
+		foreach(TraceEquation te in GetComponents<TraceEquation>())
+		{
+			te.enabled = true;
+		}
+		foreach(Sine sn in GetComponents<Sine>())
+		{
+			sn.Period = Random.Range(7,13);
+		}
+		GetComponent<CorrectOffset>().enabled = true;
+		SpriteRenderer r = GetComponent<SpriteRenderer>();
+		Color color = r.color;
+		color.a = 0.75f;
+		r.color = color;	
 	}
 }
