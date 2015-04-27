@@ -795,15 +795,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22408948, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
       propertyPath: m_LocalScale.x
-      value: 1.62
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22408948, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
       propertyPath: m_LocalScale.y
-      value: 1.62
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22408948, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.62
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11408968, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
       propertyPath: names.Array.data[0]
@@ -915,7 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 777d7eb3673b2fa418b78148d7eee672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 2
+  action: 3
 --- !u!114 &1581558031
 MonoBehaviour:
   m_ObjectHideFlags: 0

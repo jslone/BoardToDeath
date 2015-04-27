@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e750666ee87244d4be2d3ccaa34dd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: {x: 1000, y: 1000}
+  Health: {x: 10000, y: 10000}
   Attack: {x: 0, y: 0}
 --- !u!222 &22215802
 CanvasRenderer:
