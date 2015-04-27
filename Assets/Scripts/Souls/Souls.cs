@@ -34,6 +34,10 @@ public class Souls : MonoBehaviour {
 		heroList.Add(hero);
 	}
 
+	public static void ClearMonsters() {
+		monsterList.Clear();
+	}
+
 	void RunAttacks () {
 		int i;
 		for(i = 0; i < monsters && i < heroes; i++) {
@@ -45,7 +49,11 @@ public class Souls : MonoBehaviour {
 		}
 
 		if(world.Dead) {
-			Application.LoadLevel("gameOver");
+			if (Tutorial.CurrentTutorial != null) {
+				Tutorial.CurrentTutorial.UpdateProgress(-1);
+			} else {
+				Application.LoadLevel("gameOver");
+			}
 		}
 
 		PruneDead(monsterList);

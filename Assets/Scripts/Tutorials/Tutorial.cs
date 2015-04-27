@@ -37,11 +37,10 @@ public abstract class Tutorial : MonoBehaviour {
 	}
 
 	protected void CompleteTutorial(int level) {
-		// TODO: unlock next tutorial level in PlayerPrefs
-		Debug.Log("Finished tutorial level " + level.ToString());
 		if (PlayerPrefs.GetInt("levelUnlocked", 0) < level) {
 			PlayerPrefs.SetInt("levelUnlocked", level);
 		}
+		CurrentTutorial = null;
 		Application.LoadLevel("title");
 	}
 

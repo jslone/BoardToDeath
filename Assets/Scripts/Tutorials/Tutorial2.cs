@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Tutorial2 : Tutorial {
 	public GameObject BoardingLine1;
 	public GameObject BoardingLine2;
 	public GameObject BoardingLine3;
+	public Souls WorldStatus;
 
 	GameObject currentMessage;
+	List<GameObject> souls = new List<GameObject>();
 	int progressedSouls = 0;
 
 	// Continue in tutorial
@@ -20,18 +23,16 @@ public class Tutorial2 : Tutorial {
 
 			case 1:
 				GameTime.paused = false;
-				SoulSpawner.UseSpawner();
+				SpawnSoul(0, 0);
 				pos = new Vector3(-4f, -4.25f, 0);
-				BoardingLine1.GetComponent<BoxCollider2D>().enabled = true;
-				BoardingLine2.GetComponent<BoxCollider2D>().enabled = true;
-				BoardingLine3.GetComponent<BoxCollider2D>().enabled = true;
+				ToggleBoardingLines(true);
 				currentMessage = CreateMessage(pos, "Click on a dock to move a soul to that line.", -1);
 				break;
 
 			case 2:
 				Destroy(currentMessage);
 				pos = new Vector3(0, 0, 0);
-				currentMessage = CreateMessage(pos, "Next, click on the ship to ferry your soul across the river.", -1);
+				currentMessage = CreateMessage(pos, "Wait for the ship to ferry your soul across the river.", -1);
 				break;
 
 			case 3:
@@ -42,18 +43,19 @@ public class Tutorial2 : Tutorial {
 				break;
 
 			case 4:
-				SoulSpawner.UseSpawner();
+				SpawnSoul(2f, 0);
 				pos.x = -4f;
-				// TODO: show soul turning into monster? Also, attach patience to souls
-				CreateMessage(pos, "Each soul has a patience meter. Make sure that the souls are loaded onto the boats before they run out of patience!");
+				ToggleBoardingLines(false);
+				CreateMessage(pos, "Each soul has a patience meter. If its patience depletes, the soul will turn into a monster!", 6);
+				GameTime.paused = false;
 				break;
 
 			case 5:
-				GameTime.paused = false;
+				ToggleBoardingLines(true);
 				pos.x = -4f;
 				currentMessage = CreateMessage(pos, "Ferry the remaining souls across before they run out of patience!", -1);
 				for (int i = 0; i < 10; i++) {
-					SoulSpawner.UseSpawner();
+					souls.Add(SpawnSoul(Random.Range(20f, 30f), 100f));
 				}
 				break;
 
@@ -64,19 +66,67 @@ public class Tutorial2 : Tutorial {
 				CreateMessage(pos, "Good work, Hades.");
 				break;
 
+			// Monster destroyed world
+			case 10:
+				GameTime.paused = true;
+				Destroy(currentMessage);
+				WorldStatus.world.Health.x = 1;
+				Souls.ClearMonsters();
+				CreateMessage(pos, "No, no! The monsters have destroyed the world. Try again!");
+				break;
+
+			// Reset state after monster rampage
+			case 11:
+				phase = 5;
+				progressedSouls = 2;
+				foreach (GameObject soul in souls) {
+					if (soul) {
+						Destroy(soul);
+					}
+				}
+				souls.Clear();
+				WorldStatus.world.Health.x = 1;
+				Souls.ClearMonsters();
+				GameTime.paused = false;
+				ProceedTutorial();
+				break;
+
 			default:
 				CompleteTutorial(2);
 				break;
 		}
 	}
 
-	// Successfully queued or shipped soul
 	public override void UpdateProgress(int count) {
-		progressedSouls += count;
-		if (progressedSouls <= 2 || progressedSouls >= 24) { // loaded 12 boats total
+		if (count < 0) {
+			// Monster destroyed world
+			phase = 10;
 			ProceedTutorial();
+		} else {
+			// Successfully queued or shipped soul
+			progressedSouls += count;
+			if (progressedSouls <= 2 || progressedSouls >= 22) { // loaded 11 boats total
+				ProceedTutorial();
+			}
 		}
+		
 	}
 
+	void ToggleBoardingLines(bool on) {
+		BoardingLine1.GetComponent<BoxCollider2D>().enabled = on;
+		BoardingLine2.GetComponent<BoxCollider2D>().enabled = on;
+		BoardingLine3.GetComponent<BoxCollider2D>().enabled = on;
+	}
 
+	GameObject SpawnSoul(float patience, float attack) {
+		GameObject soul = SoulSpawner.UseSpawner();
+		Patience sp = soul.GetComponent<Patience>();
+		if (patience > 0) {
+			sp.TTL = patience;
+			sp.enabled = true;
+		}
+		RPGCharacter monster = soul.GetComponent<RPGCharacter>();
+		monster.Attack = new Vector2(attack, attack);
+		return soul;
+	}
 }
