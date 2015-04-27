@@ -43,7 +43,7 @@ public class Tutorial2 : Tutorial {
 				break;
 
 			case 4:
-				SpawnSoul(2f, 0);
+				souls.Add(SpawnSoul(2f, 0));
 				pos.x = -4f;
 				ToggleBoardingLines(false);
 				CreateMessage(pos, "Each soul has a patience meter. If its patience depletes, the soul will turn into a monster!", 6);
@@ -68,11 +68,12 @@ public class Tutorial2 : Tutorial {
 
 			// Monster destroyed world
 			case 10:
-				GameTime.paused = true;
 				Destroy(currentMessage);
 				WorldStatus.world.Health.x = 1;
 				Souls.ClearMonsters();
-				CreateMessage(pos, "No, no! The monsters have destroyed the world. Try again!");
+				WorldStatus.enabled = false;
+				ToggleBoardingLines(false);
+				CreateMessage(pos, "No, no! The monsters have overrun the world. Try again!");
 				break;
 
 			// Reset state after monster rampage
@@ -85,9 +86,8 @@ public class Tutorial2 : Tutorial {
 					}
 				}
 				souls.Clear();
-				WorldStatus.world.Health.x = 1;
+				WorldStatus.enabled = true;
 				Souls.ClearMonsters();
-				GameTime.paused = false;
 				ProceedTutorial();
 				break;
 
