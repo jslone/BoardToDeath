@@ -15,7 +15,9 @@ public class RPGCharacter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if(Dead) {
+			Destroy(gameObject);
+		}
 	}
 
 	public static void Fight(RPGCharacter c1, RPGCharacter c2) {
