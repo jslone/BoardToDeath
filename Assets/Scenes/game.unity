@@ -418,6 +418,14 @@ Prefab:
       propertyPath: Health.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: heroPrefab
+      value: 
+      objectReference: {fileID: 195920, guid: 0584f9f8bfd6d467c95c839985e74080, type: 2}
+    - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: Cost
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0
@@ -2628,8 +2636,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
       propertyPath: Cost
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: heroPrefab
+      value: 
+      objectReference: {fileID: 143018, guid: bf55a8ed63ceb457ba8f4cb6095b2612, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0
@@ -4070,8 +4082,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
       propertyPath: Cost
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: heroPrefab
+      value: 
+      objectReference: {fileID: 138034, guid: cecea001d820d4da390936fedee59413, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0

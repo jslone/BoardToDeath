@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class UIBuyHero : MonoBehaviour {
-	public GameObject hero;
+	public GameObject heroPrefab;
 	public int Cost;
 
 	public Button button;
@@ -25,7 +25,7 @@ public class UIBuyHero : MonoBehaviour {
 	public void Buy() {
 		if(CanBuy()) {
 			Souls.souls -= Cost;
-			hero = GameObject.Instantiate(hero) as GameObject;
+			GameObject hero = GameObject.Instantiate(heroPrefab) as GameObject;
 			Souls.AddHero(hero.GetComponent<RPGCharacter>());
 		}
 	}
