@@ -46,7 +46,7 @@ public class Tutorial2 : Tutorial {
 				souls.Add(SpawnSoul(2f, 0));
 				pos.x = -4f;
 				ToggleBoardingLines(false);
-				CreateMessage(pos, "Each soul has a patience meter. If its patience depletes, the soul will turn into a monster!", 6);
+				CreateMessage(pos, "Each soul has a patience meter. If its patience depletes, the soul will transform into a monster!", 6);
 				GameTime.paused = false;
 				break;
 
