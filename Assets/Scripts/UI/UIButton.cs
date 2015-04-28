@@ -5,6 +5,7 @@ public enum ButtonAction {
 	PLAY,
 	TUTORIAL1,
 	TUTORIAL2,
+	TUTORIAL3,
 	QUIT
 }
 
@@ -21,6 +22,9 @@ public class UIButton : MonoBehaviour {
 				break;
 			case ButtonAction.TUTORIAL2:
 				Application.LoadLevel("tutorial2");	// boat tutorial
+				break;
+			case ButtonAction.TUTORIAL3:
+				Application.LoadLevel("tutorial2");	// menu tutorial
 				break;
 /* 			case ButtonAction.CREDITS:
 				Application.LoadLevel("credits");	// credits scene
