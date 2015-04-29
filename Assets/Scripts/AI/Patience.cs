@@ -36,9 +36,16 @@ public class Patience : MonoBehaviour {
 		{
 			te.enabled = true;
 		}
+		float lastPeriod = -1;
 		foreach(Sine sn in GetComponents<Sine>())
 		{
-			sn.Period = Random.Range(7,13);
+			do
+			{
+				sn.Period = Random.Range(7,13);
+			}
+			while(Mathf.Abs(sn.Period - lastPeriod) < 0.5f);
+			lastPeriod = sn.Period;
+
 		}
 		GetComponent<CorrectOffset>().enabled = true;
 		SpriteRenderer r = GetComponent<SpriteRenderer>();
