@@ -24,12 +24,8 @@ public class UIButton : MonoBehaviour {
 				Application.LoadLevel("tutorial2");	// boat tutorial
 				break;
 			case ButtonAction.TUTORIAL3:
-				Application.LoadLevel("tutorial2");	// menu tutorial
+				Application.LoadLevel("tutorial3");	// menu tutorial
 				break;
-/* 			case ButtonAction.CREDITS:
-				Application.LoadLevel("credits");	// credits scene
-				break; 
-*/
 			case ButtonAction.QUIT:
 				Application.Quit();
 				break;
