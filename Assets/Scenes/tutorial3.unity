@@ -232,7 +232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Message: {fileID: 116654, guid: 5ae299634193dd843a31834ac21b017f, type: 2}
-  MenuButton: {fileID: 1484823387}
   Threads:
   - {fileID: 1973961243}
   - {fileID: 837004125}
@@ -247,6 +246,9 @@ MonoBehaviour:
   - {fileID: 1582836044}
   - {fileID: 426436099}
   - {fileID: 2013215761}
+  MenuButton: {fileID: 1484823387}
+  MenuLeftButton: {fileID: 991153829}
+  MenuRightButton: {fileID: 1165205642}
 --- !u!114 &47221236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +327,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 486648466}
     m_Modifications:
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22413362, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -422,6 +428,30 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 8b0d8182440150146b8cb9d16601f929,
         type: 3}
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 47221235}
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateProgress
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
   m_IsPrefabParent: 0
@@ -1782,6 +1812,10 @@ Prefab:
       propertyPath: Height
       value: .300000012
       objectReference: {fileID: 0}
+    - target: {fileID: 6156464, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
   m_IsPrefabParent: 0
@@ -1950,6 +1984,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 432396, guid: c96614c4a30934717b237453b1467fd5, type: 2}
   m_PrefabInternal: {fileID: 977455306}
+--- !u!114 &991153829 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11446088, guid: c20eb0180d8da4abaa14fbf9fdf508be,
+    type: 2}
+  m_PrefabInternal: {fileID: 1674115895}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1006059195
 Prefab:
   m_ObjectHideFlags: 0
@@ -2598,6 +2638,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Size: 5
+--- !u!114 &1165205642 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11497344, guid: c20eb0180d8da4abaa14fbf9fdf508be,
+    type: 2}
+  m_PrefabInternal: {fileID: 1674115895}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1197942899
 Prefab:
   m_ObjectHideFlags: 0
@@ -4138,6 +4184,10 @@ Prefab:
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6156464, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
