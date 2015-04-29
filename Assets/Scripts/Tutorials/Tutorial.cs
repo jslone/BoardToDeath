@@ -27,13 +27,12 @@ public abstract class Tutorial : MonoBehaviour {
 	public abstract void UpdateProgress(int count);
 	protected abstract void ProceedTutorial();
 
-	IEnumerator WaitForSecondsAndProceed(float t) {
-		yield return new WaitForSeconds(t);
-		ProceedTutorial();
+	void WaitForSecondsAndProceed(float t) {
+		Invoke("ProceedTutorial", t);
 	}
 
 	protected void WaitAndProceed(float t) {
-		StartCoroutine(WaitForSecondsAndProceed(t));
+		WaitForSecondsAndProceed(t);
 	}
 
 	protected void CompleteTutorial(int level) {
@@ -47,7 +46,7 @@ public abstract class Tutorial : MonoBehaviour {
 	// Create text message
 	protected GameObject CreateMessage(Vector3 pos, string text, float duration) {
 		GameObject message = Instantiate(Message, pos, Quaternion.identity) as GameObject;
-		message.transform.parent = transform;
+		message.transform.SetParent(transform);
 		message.GetComponent<UIMessage>().MessageText = text;
 		message.GetComponent<UIMessage>().Duration = duration;
 		message.GetComponent<UIMessage>().ProceedTutorialOnClose = (duration >= 0);

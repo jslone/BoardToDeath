@@ -283,7 +283,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 20
+  m_DynamicPixelsPerUnit: 100
 --- !u!223 &47221238
 Canvas:
   m_ObjectHideFlags: 0
@@ -293,14 +293,14 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1960465009}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 1000
 --- !u!224 &47221239
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1419,15 +1419,15 @@ Canvas:
   m_GameObject: {fileID: 600337755}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1960465009}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 999
 --- !u!114 &612680017 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11466864, guid: 3ff4e109423814d6a8a312f5d7aad697,
