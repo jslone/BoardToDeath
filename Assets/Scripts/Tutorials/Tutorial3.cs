@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -17,6 +18,7 @@ public class Tutorial3 : Tutorial {
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;
+				ToggleInteraction(false);
 				CreateMessage(pos, "Unfortunately, due to budget cuts, we can only afford to give you one boat.");
 				break;
 
@@ -27,13 +29,21 @@ public class Tutorial3 : Tutorial {
 			case 2:
 				pos = new Vector3(5f, 3.25f, 0);
 				GameTime.paused = false;
+				ToggleMenuButton(true);
 				currentMessage = CreateMessage(pos, "Click the Menu button to pause the game and view possible upgrades.", -1);
 				break;
 
 			// opened menu
 			case 3:
+				pos = new Vector3(0f, -3f, 0);
+				ToggleMenuButton(false);
 				Destroy(currentMessage);
-				currentMessage = CreateMessage(pos, "Click to purchase a new ship.", -1);
+				CreateMessage(pos, "Here, you can upgrade Atropos' walking speed, the cut window of threads, and even buy an upgrade to slow time.");
+				break;
+
+			case 4:
+				pos = new Vector3(0f, -3f, 0);
+				// TODO: scroll left
 				break;
 
 			default:
@@ -56,6 +66,11 @@ public class Tutorial3 : Tutorial {
 		foreach (GameObject line in BoardingLines) {
 			line.GetComponent<BoxCollider2D>().enabled = on;
 		}
+		ToggleMenuButton(on);
+	}
+
+	void ToggleMenuButton(bool on) {
 		MenuButton.interactable = on;
+		MenuButton.GetComponent<EventTrigger>().enabled = on;
 	}
 }

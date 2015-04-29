@@ -27,12 +27,8 @@ public abstract class Tutorial : MonoBehaviour {
 	public abstract void UpdateProgress(int count);
 	protected abstract void ProceedTutorial();
 
-	void WaitForSecondsAndProceed(float t) {
-		Invoke("ProceedTutorial", t);
-	}
-
 	protected void WaitAndProceed(float t) {
-		WaitForSecondsAndProceed(t);
+		Invoke("ProceedTutorial", t);
 	}
 
 	protected void CompleteTutorial(int level) {
