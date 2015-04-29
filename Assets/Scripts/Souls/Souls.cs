@@ -16,7 +16,10 @@ public class Souls : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		ClearMonsters();
+	}
+
+	void Awake() {
+		monsterList.Clear();
 		heroList.Clear();
 		souls = 0;
 	}

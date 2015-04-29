@@ -23,7 +23,7 @@ public class UIMessage : MonoBehaviour {
 		if (Duration == 0) {
 			ContinueText.SetActive(true);
 		} else if (Duration > 0) {
-			Destroy(gameObject, Duration); // TODO: fade before killing message
+			Invoke("OnCloseMessage", Duration);
 		}
 	}
 	
@@ -33,11 +33,12 @@ public class UIMessage : MonoBehaviour {
 
 	public void CloseMessage() {
 		if (Duration == 0) {
-			Destroy(gameObject); // TODO: fade before killing message
+			OnCloseMessage();
 		}
 	}
 
-	void OnDestroy() {
+	void OnCloseMessage() {
+		Destroy(gameObject); // TODO: fade before killing message
 		if (ProceedTutorialOnClose) {
 			Tutorial.Proceed();
 		}
