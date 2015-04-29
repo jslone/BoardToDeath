@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
 public class UIUpgradeNav : MonoBehaviour {
 	public Text text;
@@ -21,6 +22,8 @@ public class UIUpgradeNav : MonoBehaviour {
 	}
 
 	public void Navigate() {
-		upgrades.Move(dir);
+		if (!String.IsNullOrEmpty(text.text)) {
+			upgrades.Move(dir);
+		}
 	}
 }

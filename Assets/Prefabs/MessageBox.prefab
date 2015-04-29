@@ -107,7 +107,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 0
-    m_MaxSize: 10
+    m_MaxSize: 6
     m_Alignment: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: .784313738}
   m_Sprite: {fileID: 21300000, guid: e4eef69c4a8eb6b478f8e0678a60bccb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
