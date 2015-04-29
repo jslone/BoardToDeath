@@ -40,7 +40,7 @@ GameObject:
   - 114: {fileID: 11489878}
   - 114: {fileID: 11454440}
   m_Layer: 0
-  m_Name: Philosopher
+  m_Name: Soul0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,7 +85,7 @@ Transform:
   m_GameObject: {fileID: 193110}
   m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106709}
   m_LocalPosition: {x: -.300000012, y: .800000012, z: 0}
-  m_LocalScale: {x: .100000001, y: .600000024, z: 1}
+  m_LocalScale: {x: .300000012, y: 1.79999995, z: 1}
   m_Children:
   - {fileID: 479716}
   - {fileID: 447760}
@@ -99,7 +99,7 @@ Transform:
   m_GameObject: {fileID: 141598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.36999989, y: -1.37, z: 0}
-  m_LocalScale: {x: 1.20000005, y: 1.20000005, z: 1}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
   m_Children:
   - {fileID: 422804}
   m_Father: {fileID: 0}
@@ -1430,7 +1430,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 447eeed9b21cc9a45bb83676116be174, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98410b569a3ce2e4aac88bd2e89495a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21287390
 SpriteRenderer:
