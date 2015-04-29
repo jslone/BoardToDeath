@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: 5da88f48504c24d4fa301033ea502390, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a9d337bef1e7634b9b1c44df23d350d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ecfd1aa0a3f494f9c8d5a619a0dd70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hero: {fileID: 195920, guid: 0584f9f8bfd6d467c95c839985e74080, type: 2}
+  heroPrefab: {fileID: 0}
   Cost: 25
   button: {fileID: 11446330}
   text: {fileID: 11474698}

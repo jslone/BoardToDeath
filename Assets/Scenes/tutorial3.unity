@@ -249,6 +249,7 @@ MonoBehaviour:
   MenuButton: {fileID: 1484823387}
   MenuLeftButton: {fileID: 991153829}
   MenuRightButton: {fileID: 1165205642}
+  WorldStatus: {fileID: 447215483}
 --- !u!114 &47221236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +330,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11481398, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22413362, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: m_LocalPosition.x
@@ -473,6 +474,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 242060513}
     m_Modifications:
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 22454090, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -572,6 +577,30 @@ Prefab:
     - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
       propertyPath: Cost
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 47221235}
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateProgress
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 11406226, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
@@ -1230,6 +1259,12 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
   m_PrefabInternal: {fileID: 442477895}
+--- !u!114 &447215483 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1342110254}
+  m_Script: {fileID: 11500000, guid: b08c23b41a72340c1b004e995e8d1c18, type: 3}
 --- !u!224 &455459675 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22429290, guid: 17b73ec461eb2d54683022b3a4941818,
@@ -2833,6 +2868,15 @@ Prefab:
       propertyPath: heroPrefab
       value: 
       objectReference: {fileID: 143018, guid: bf55a8ed63ceb457ba8f4cb6095b2612, type: 2}
+    - target: {fileID: 11418130, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7a1546dd9a04ce04a846d4d7912bd948,
+        type: 3}
+    - target: {fileID: 22475900, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0
@@ -2995,6 +3039,14 @@ Prefab:
     - target: {fileID: 22443986, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
       propertyPath: m_SizeDelta.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488462, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: Health.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488462, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: Health.y
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
@@ -4299,6 +4351,15 @@ Prefab:
       propertyPath: heroPrefab
       value: 
       objectReference: {fileID: 138034, guid: cecea001d820d4da390936fedee59413, type: 2}
+    - target: {fileID: 11418130, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b358a8641901f2d41bfa472a9368fb51,
+        type: 3}
+    - target: {fileID: 22475900, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0

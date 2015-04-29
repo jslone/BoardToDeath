@@ -109,7 +109,6 @@ public class Tutorial2 : Tutorial {
 				ProceedTutorial();
 			}
 		}
-		
 	}
 
 	void ToggleBoardingLines(bool on) {

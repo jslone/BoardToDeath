@@ -16,6 +16,9 @@ public class Souls : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		ClearMonsters();
+		heroList.Clear();
+		souls = 0;
 	}
 
 	void Update() {
@@ -52,6 +55,7 @@ public class Souls : MonoBehaviour {
 			if (Tutorial.CurrentTutorial != null) {
 				Tutorial.CurrentTutorial.UpdateProgress(-1);
 			} else {
+				// TODO: show stats screen and lose message instead of loading new scene
 				Application.LoadLevel("gameOver");
 			}
 		}

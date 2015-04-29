@@ -36,7 +36,19 @@ public abstract class Tutorial : MonoBehaviour {
 			PlayerPrefs.SetInt("levelUnlocked", level);
 		}
 		CurrentTutorial = null;
-		Application.LoadLevel("title");
+		string levelToLoad;
+		switch (level) {
+			case 1:
+				levelToLoad = "tutorial2";
+				break;
+			case 2:
+				levelToLoad = "tutorial3";
+				break;
+			default:
+				levelToLoad = "title";
+				break;
+		}
+		Application.LoadLevel(levelToLoad);
 	}
 
 	// Create text message
