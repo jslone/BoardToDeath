@@ -130,7 +130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tutorial 1
+  m_Text: Threads
 --- !u!222 &72613777
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -746,7 +746,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tutorial 2
+  m_Text: Boats
 --- !u!222 &502227068
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tutorial 3
+  m_Text: Upgrades
 --- !u!222 &552108965
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1012,17 +1012,17 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
   m_IsPrefabParent: 0
---- !u!224 &734229633
+--- !u!224 &734229633 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22471556, guid: c20eb0180d8da4abaa14fbf9fdf508be,
     type: 2}
   m_PrefabInternal: {fileID: 734229632}
---- !u!224 &734229634
+--- !u!224 &734229634 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22408948, guid: c20eb0180d8da4abaa14fbf9fdf508be,
     type: 2}
   m_PrefabInternal: {fileID: 734229632}
---- !u!114 &734229635
+--- !u!114 &734229635 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11483096, guid: c20eb0180d8da4abaa14fbf9fdf508be,
     type: 2}
