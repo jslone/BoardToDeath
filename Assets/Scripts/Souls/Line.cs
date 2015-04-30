@@ -28,6 +28,10 @@ public class Line : MonoBehaviour {
 		Vector3 linePos = transform.position;
 		linePos.x += Space * Queue.Count;
 
+		Vector3 scale = character.transform.localScale;
+		character.transform.parent = transform;
+		character.transform.localScale = scale;
+
 		Queue.AddLast(character);
 		character.Teleport(linePos);
 	}

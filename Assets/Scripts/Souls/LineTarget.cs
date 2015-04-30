@@ -15,7 +15,7 @@ public class LineTarget : Target {
 	}
 
 	public override void DoSomething() {
-		if(from.Length > 0) {
+		if(enabled && from.Length > 0) {
 			to.Add(from.Remove());
 		}
 	}

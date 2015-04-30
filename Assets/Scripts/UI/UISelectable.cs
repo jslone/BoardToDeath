@@ -6,8 +6,13 @@ public class UISelectable : MonoBehaviour {
 	public float HoverOpacity = 0.5f;
 	Color oldColor;
 
+	void Awake() {
+		oldColor = spriteRenderer.material.color;
+	}
+
 	// Use this for initialization
 	void Start () {
+
 	}
 	
 	// Update is called once per frame
@@ -15,7 +20,7 @@ public class UISelectable : MonoBehaviour {
 	}
 
 	void OnMouseEnter() {
-		Highlight(true);
+		Highlight(enabled);
 	}
 
 	void OnMouseExit() {

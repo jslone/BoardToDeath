@@ -24,6 +24,8 @@ public class Boat : Upgradeable {
 	private bool approaching = true;
 	// Use this for initialization
 	void Start () {
+		WaitLine.transform.parent.GetComponent<LineTarget>().enabled = true;
+		WaitLine.transform.parent.GetComponent<UISelectable>().enabled = true;
 	}
 	
 	// Update is called once per frame
@@ -51,9 +53,7 @@ public class Boat : Upgradeable {
 				character.transform.FindChild("Status").gameObject.SetActive(false);
 
 				GameObject soul = character.gameObject;
-				Vector3 scale = soul.transform.localScale;
 				soul.transform.parent = transform;
-				soul.transform.localScale = scale;
 
 				character.Teleport(transform.TransformPoint(posInBoat));
 				onBoat.Add(soul);
