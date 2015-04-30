@@ -100,7 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20803e8f27266454bb1c956c2de3871b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 110010, guid: 4012899188baa4a33bf5a8ff30eae5fc, type: 2}
+  prefabs:
+  - {fileID: 110010, guid: 4012899188baa4a33bf5a8ff30eae5fc, type: 2}
+  - {fileID: 182078, guid: 70e16776aac9d4ec289a303ad2e20f10, type: 2}
+  - {fileID: 187658, guid: e57d4f42a18fe41aab3d3772539afa69, type: 2}
   Wait: 1
   ScaleOnInstantiate: 0
 --- !u!114 &11445740

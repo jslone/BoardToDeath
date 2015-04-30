@@ -3684,7 +3684,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d00c31c9174b435884f230f37f88d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 141598, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+  prefabs:
+  - {fileID: 141598, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
+  - {fileID: 126892, guid: 2d72d9b9bf04249a4894699638ba73b4, type: 2}
+  - {fileID: 118094, guid: ffbec6d6fe7a64512996bcf9164ff183, type: 2}
   Wait: 0
   ScaleOnInstantiate: 1
   line: {fileID: 389282768}
@@ -3979,6 +3982,14 @@ Prefab:
       propertyPath: m_Name
       value: ThreadSpawner 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
+      propertyPath: prefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 110010, guid: 4012899188baa4a33bf5a8ff30eae5fc, type: 2}
+    - target: {fileID: 11438796, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
+      propertyPath: prefabs.Array.data[2]
+      value: 
+      objectReference: {fileID: 110010, guid: 4012899188baa4a33bf5a8ff30eae5fc, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
   m_IsPrefabParent: 0

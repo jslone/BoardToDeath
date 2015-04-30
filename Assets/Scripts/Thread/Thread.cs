@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Thread : MonoBehaviour {
+	public int soulIdx;
 	public Logistic positionEquation;
 	public TimedEquations position;
 	public TimedEquations patience;
@@ -31,7 +32,7 @@ public class Thread : MonoBehaviour {
 		potentialMonster.Health.x = 0;
 
 		// Spawn soul
-		GameObject soul = SoulSpawner.UseSpawner();
+		GameObject soul = SoulSpawner.UseSpawner(soulIdx);
 
 		// Set souls patience
 		if(soul) {

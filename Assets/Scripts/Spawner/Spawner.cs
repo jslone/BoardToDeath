@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Spawner : MonoBehaviour {
-	public GameObject prefab;
+	public GameObject[] prefabs;
 	public bool Wait;
 	public bool ScaleOnInstantiate;
 	private GameObject last;
@@ -18,6 +18,11 @@ public class Spawner : MonoBehaviour {
 	}
 
 	public GameObject Spawn() {
+		return Spawn (Random.Range(0,prefabs.Length));
+	}
+
+	public GameObject Spawn(int i) {
+		GameObject prefab = prefabs[i];
 		if(!(Wait && last)) {
 			last = Instantiate(prefab,transform.position,transform.rotation) as GameObject;
 			if(ScaleOnInstantiate) {

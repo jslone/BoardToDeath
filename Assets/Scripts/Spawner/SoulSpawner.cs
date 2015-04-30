@@ -20,10 +20,25 @@ public class SoulSpawner : Spawner {
 		}
 		return soul;
 	}
-
+	
 	public static GameObject UseSpawner() {
 		if(_instance) {
 			return _instance.UseSpawnerLocal();
+		}
+		return null;
+	}
+
+	private GameObject UseSpawnerLocal(int i) {
+		GameObject soul = Spawn(i);
+		if(soul) {
+			line.Add(soul.GetComponent<CharacterLine>());
+		}
+		return soul;
+	}
+
+	public static GameObject UseSpawner(int i) {
+		if(_instance) {
+			return _instance.UseSpawnerLocal(i);
 		}
 		return null;
 	}

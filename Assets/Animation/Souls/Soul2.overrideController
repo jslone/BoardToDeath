@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Soul2
+  m_Controller: {fileID: 9100000, guid: 99dba63ad0d45482281ac071bd83e070, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 98c6b4d17e188411086a787566feb421, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 087100ddb2d344f49aea24c25252d957, type: 2}
