@@ -22,9 +22,7 @@ public class Tutorial3 : Tutorial {
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;
-				ToggleInteraction(false);
-				pos = new Vector3(4f, 2.75f, 0);
-				CreateMessage(pos, "Once you've ferried enough souls, you can use them to purchase upgrades!");
+				CreateMessage(Vector3.zero, "Once you've ferried enough souls, you can use them to purchase upgrades!");
 				break;
 
 			case 1:
@@ -83,6 +81,7 @@ public class Tutorial3 : Tutorial {
 				Destroy(currentMessage);
 				ToggleButton(MenuButton, true);
 				Souls.souls = 50;
+				pos = new Vector3(-3.5f, 2.75f, 0);
 				currentMessage = CreateMessage(pos, "Buy more powerful heroes to defeat the monsters before they overrun the world!", -1);
 				WaitAndProceed(5f);
 				break;
@@ -100,7 +99,8 @@ public class Tutorial3 : Tutorial {
 			// Monster destroyed world
 			case 12:
 				Destroy(currentMessage);
-				WorldStatus.enabled = false;
+				WorldStatus.world.Health.x = 500;
+				Souls.ClearMonsters();
 				CreateMessage(pos, "No, no! The monsters have overrun the world. Try again.");
 				break;
 
@@ -113,9 +113,6 @@ public class Tutorial3 : Tutorial {
 					}
 				}
 				souls.Clear();
-				WorldStatus.enabled = true;
-				WorldStatus.world.Health.x = 500;
-				Souls.ClearMonsters();
 				Souls.souls = 50;
 				ProceedTutorial();
 				break;
@@ -145,19 +142,6 @@ public class Tutorial3 : Tutorial {
 			// purchased boat
 			ProceedTutorial();
 		}
-	}
-
-	void ToggleInteraction(bool on) {
-		foreach (GameObject thread in Threads) {
-			thread.GetComponent<BoxCollider2D>().enabled = on;
-			thread.GetComponent<RandomSpawner>().enabled = on;
-		}
-		foreach (GameObject line in BoardingLines) {
-			line.GetComponent<BoxCollider2D>().enabled = on;
-		}
-		ToggleButton(MenuButton, on);
-		ToggleButton(MenuLeftButton, on);
-		ToggleButton(MenuRightButton, on);
 	}
 
 	void ToggleButton(Button button, bool on) {

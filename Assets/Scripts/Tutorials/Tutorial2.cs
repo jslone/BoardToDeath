@@ -63,7 +63,7 @@ public class Tutorial2 : Tutorial {
 			case 6:
 				GameTime.paused = true;
 				Destroy(currentMessage);
-				CreateMessage(pos, "Good work, Hades.");
+				CreateMessage(pos, "Good work, mortal.");
 				break;
 
 			// Monster destroyed world
