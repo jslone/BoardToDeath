@@ -1,9 +1,11 @@
 fileFormatVersion: 2
 guid: 1dae1890bdccb3c43b06f1dd4b715410
-timeCreated: 1429858956
+timeCreated: 1430374960
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: atropos_0
+    21300002: atropos_1
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -37,7 +39,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +50,27 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: atropos_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 150
+        width: 2462
+        height: 1800
+      alignment: 9
+      pivot: {x: .699999988, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: atropos_1
+      rect:
+        serializedVersion: 2
+        x: 2602
+        y: 150
+        width: 2462
+        height: 1800
+      alignment: 9
+      pivot: {x: .699999988, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
