@@ -3,6 +3,7 @@ using System.Collections;
 
 
 public class RPGCharacter : MonoBehaviour {
+	public bool DestroyOnDeath = true;
 	public Vector2 Health;
 	public Vector2 Attack;
 
@@ -15,7 +16,7 @@ public class RPGCharacter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Dead) {
+		if(Dead && DestroyOnDeath) {
 			Destroy(gameObject);
 		}
 	}
