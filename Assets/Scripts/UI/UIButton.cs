@@ -6,6 +6,7 @@ public enum ButtonAction {
 	TUTORIAL1,
 	TUTORIAL2,
 	TUTORIAL3,
+	MENU,
 	QUIT
 }
 
@@ -15,7 +16,12 @@ public class UIButton : MonoBehaviour {
 	public void OnClick() {
 		switch(action) {
 			case ButtonAction.PLAY:
-				Application.LoadLevel("game");	// game scene
+				int lvl = PlayerPrefs.GetInt("levelUnlocked");	
+				if(lvl >= 3) {
+					Application.LoadLevel("game");	// game scene
+				} else {
+					Application.LoadLevel("tutorial" + (lvl+1));
+				}
 				break;
 			case ButtonAction.TUTORIAL1:
 				Application.LoadLevel("tutorial1");	// thread cutting tutorial
@@ -25,6 +31,9 @@ public class UIButton : MonoBehaviour {
 				break;
 			case ButtonAction.TUTORIAL3:
 				Application.LoadLevel("tutorial3");	// menu tutorial
+				break;
+			case ButtonAction.MENU:
+				Application.LoadLevel("menu");	// load menu
 				break;
 			case ButtonAction.QUIT:
 				Application.Quit();

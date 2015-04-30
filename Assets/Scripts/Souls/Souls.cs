@@ -3,9 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Souls : MonoBehaviour {
-	public static int souls = 0;
+	public static int soulsTotal = 0;
+	private static int _currentSouls = 0;
+	public static int souls
+	{
+		get { return _currentSouls; }
+		set
+		{
+			soulsTotal += Mathf.Max(value - _currentSouls,0);
+			_currentSouls = value;
+		}
+	}
 	public static int monsters { get { return monsterList.Count; }}
 	public static int heroes { get { return heroList.Count; }}
+	public static int monstersTotal = 0;
+	public static int heroesTotal = 0;
 
 	private static List<RPGCharacter> heroList = new List<RPGCharacter>();
 	private static List<RPGCharacter> monsterList = new List<RPGCharacter>();
@@ -14,6 +26,9 @@ public class Souls : MonoBehaviour {
 	public float AttackRate;
 	private float timeSinceAttack;
 
+	public GameObject mainMenu;
+	public Animator menuAnim;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -21,7 +36,13 @@ public class Souls : MonoBehaviour {
 	void Awake() {
 		monsterList.Clear();
 		heroList.Clear();
-		souls = 0;
+		soulsTotal = 0;
+		_currentSouls = 0;
+		monstersTotal = 0;
+		heroesTotal = 0;
+
+		GameTime.done = false;
+		GameTime.paused = false;
 	}
 
 	void Update() {
@@ -34,10 +55,12 @@ public class Souls : MonoBehaviour {
 
 	public static void AddMonster(RPGCharacter monster) {
 		monsterList.Add(monster);
+		monstersTotal++;
 	}
 
 	public static void AddHero(RPGCharacter hero) {
 		heroList.Add(hero);
+		heroesTotal++;
 	}
 
 	public static void ClearMonsters() {
@@ -59,7 +82,9 @@ public class Souls : MonoBehaviour {
 				Tutorial.CurrentTutorial.UpdateProgress(-1);
 			} else {
 				// TODO: show stats screen and lose message instead of loading new scene
-				Application.LoadLevel("gameOver");
+				GameTime.done = true;
+				mainMenu.SetActive(true);
+				menuAnim.SetTrigger("gameOver");
 			}
 		}
 

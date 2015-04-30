@@ -9,9 +9,15 @@ public class NaturalDisaster : RandomEvent {
 		public int min,max;
 	}
 
+	public static int count = 0;
+
 	public GameObject Message;
 	public float duration;
 	public Disaster[] disasters;
+
+	void Awake() {
+		count = 0;
+	}
 
 	protected override void Event () {
 		int eventId = Random.Range(0,disasters.Length);
