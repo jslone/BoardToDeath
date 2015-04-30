@@ -1,8 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using System.Collections;
 
 public class UIMenu : MonoBehaviour {
 	public GameObject menu;
+	public GameObject otherMenu;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +18,12 @@ public class UIMenu : MonoBehaviour {
 	}
 
 	public void Toggle() {
-		menu.SetActive(!menu.activeSelf);
-		GameTime.paused = !GameTime.paused;
+		if (otherMenu.activeSelf) {
+			menu.SetActive(true);
+			otherMenu.SetActive(false);
+		} else {
+			menu.SetActive(!menu.activeSelf);
+			GameTime.paused = !GameTime.paused;
+		}
 	}
 }

@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -27,6 +29,7 @@ public class Souls : MonoBehaviour {
 	private float timeSinceAttack;
 
 	public GameObject mainMenu;
+	public GameObject upgradeButton;
 	public Animator menuAnim;
 
 	// Use this for initialization
@@ -81,10 +84,7 @@ public class Souls : MonoBehaviour {
 			if (Tutorial.CurrentTutorial != null) {
 				Tutorial.CurrentTutorial.UpdateProgress(-1);
 			} else {
-				// TODO: show stats screen and lose message instead of loading new scene
-				GameTime.done = true;
-				mainMenu.SetActive(true);
-				menuAnim.SetTrigger("gameOver");
+				EndGame();
 			}
 		}
 
@@ -98,5 +98,13 @@ public class Souls : MonoBehaviour {
 				list.RemoveAt(i-1);
 			}
 		}
+	}
+
+	void EndGame() {
+		GameTime.done = true;
+		mainMenu.SetActive(true);
+		menuAnim.SetTrigger("gameOver");
+		upgradeButton.GetComponent<Button>().interactable = false;
+		upgradeButton.GetComponent<EventTrigger>().enabled = false;
 	}
 }

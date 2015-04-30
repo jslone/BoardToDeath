@@ -2110,6 +2110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 408134172}
+  otherMenu: {fileID: 474662854}
 --- !u!114 &837819822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3795,6 +3796,104 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 401366, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
   m_PrefabInternal: {fileID: 1335615348}
+--- !u!1001 &1342110254
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1077723428}
+    m_Modifications:
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22412900, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: menuAnim
+      value: 
+      objectReference: {fileID: 1316868341}
+    - target: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: mainMenu
+      value: 
+      objectReference: {fileID: 474662854}
+    - target: {fileID: 11488462, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: DestroyOnDeath
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: upgradeButton
+      value: 
+      objectReference: {fileID: 837819819}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1353044559
 Prefab:
   m_ObjectHideFlags: 0
@@ -4130,6 +4229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 474662854}
+  otherMenu: {fileID: 408134172}
 --- !u!114 &1484823386
 MonoBehaviour:
   m_ObjectHideFlags: 0
