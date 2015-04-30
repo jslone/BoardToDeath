@@ -5,8 +5,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Tutorial3 : Tutorial {
-	public List<GameObject> Threads;
-	public List<GameObject> BoardingLines;
 	public Button MenuButton;
 	public Button MenuLeftButton;
 	public Button MenuRightButton;

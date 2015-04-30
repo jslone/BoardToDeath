@@ -28,7 +28,7 @@ public class Tutorial1 : Tutorial {
 				break;
 
 			case 3:
-				CreateMessage(Vector3.zero, "NEXT. Step up, mortal, don’t be afraid. Your name?");
+				CreateMessage(Vector3.zero, "NEXT. Step up, mortal, don't be afraid. Your name?");
 				break;
 
 			case 4:
@@ -36,11 +36,11 @@ public class Tutorial1 : Tutorial {
 				break;
 
 			case 5:
-				CreateMessage(Vector3.zero, "Hmm... that's odd. I can't seem to find your name on the list. Are you sure you've died?");
+				CreateMessage(Vector3.zero, "Hmm... that's odd. I can't seem to find your name on the list. Are you sure you're dead?");
 				break;
 
 			case 6:
-				CreateMessage(Vector3.zero, "Oh! My apologies, you must be the new summer intern. Let me show you around.");
+				CreateMessage(Vector3.zero, "Oh! My apologies, you must be the new intern. Let me show you around.");
 				break;
 
 			case 7:
@@ -50,7 +50,7 @@ public class Tutorial1 : Tutorial {
 				break;
 
 			case 8:
-				pos.x = 5.5f;
+				pos.x = 5.75f;
 				Thread1.GetComponent<UISelectable>().Highlight(false);
 				Atropos.GetComponent<UISelectable>().Highlight(true);
 				Atropos.GetComponent<Fate>().Flip();
