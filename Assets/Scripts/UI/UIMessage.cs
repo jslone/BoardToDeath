@@ -40,7 +40,6 @@ public class UIMessage : MonoBehaviour {
 	void OnCloseMessage() {
 		Destroy(gameObject); // TODO: fade before killing message
 		if (ProceedTutorialOnClose) {
-			Debug.Log(ProceedTutorialOnClose);
 			Tutorial.Proceed();
 		}
 	}

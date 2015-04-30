@@ -80,7 +80,7 @@ public class Tutorial3 : Tutorial {
 				ToggleButton(MenuButton, true);
 				Souls.souls = 50;
 				pos = new Vector3(-3.5f, 2.75f, 0);
-				currentMessage = CreateMessage(pos, "Buy more powerful heroes to defeat the monsters before they overrun the world!", -1);
+				currentMessage = CreateMessage(pos, "Buy more powerful heroes to defeat the monsters before they overrun the world, as indicated by the world status meter!", -1);
 				WaitAndProceed(5f);
 				break;
 
