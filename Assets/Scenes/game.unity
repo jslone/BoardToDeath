@@ -3807,6 +3807,14 @@ Prefab:
       propertyPath: upgradeButton
       value: 
       objectReference: {fileID: 837819819}
+    - target: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: Threads
+      value: 
+      objectReference: {fileID: 430847966}
+    - target: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: Docks
+      value: 
+      objectReference: {fileID: 241818109}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
   m_IsPrefabParent: 0
