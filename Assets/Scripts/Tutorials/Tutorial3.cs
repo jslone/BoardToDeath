@@ -65,8 +65,9 @@ public class Tutorial3 : Tutorial {
 				break;
 
 			case 7:
-				SpawnSoul(2f, 3f);
 				SpawnSoul(1.5f, 3f);
+				SpawnSoul(1.75f, 3f);
+				SpawnSoul(2f, 3f);
 				if (currentMessage) Destroy(currentMessage);
 				ToggleButton(MenuButton, false);
 				pos = new Vector3(4f, 2.75f, 0);
@@ -74,36 +75,38 @@ public class Tutorial3 : Tutorial {
 				break;
 
 			case 8:
-				souls.Add(SpawnSoul(1f, 5f));
-				souls.Add(SpawnSoul(1.5f, 5f));
-				souls.Add(SpawnSoul(2f, 5f));
-				souls.Add(SpawnSoul(2.5f, 5f));
-				souls.Add(SpawnSoul(2.5f, 5f));
+				SpawnSoul(1f, 5f);
+				SpawnSoul(1.5f, 5f);
+				SpawnSoul(2f, 5f);
+				SpawnSoul(2.5f, 10f);
+				SpawnSoul(2.5f, 10f);
 				Destroy(currentMessage);
 				ToggleButton(MenuButton, true);
 				Souls.souls = 50;
 				currentMessage = CreateMessage(pos, "Buy more powerful heroes to defeat the monsters before they overrun the world!", -1);
+				WaitAndProceed(5f);
+				break;
+
+			// Waiting for monsters to die
+			case 9:
 				break;
 
 			// After all monsters are slain
-			case 9:
+			case 10:
 				Destroy(currentMessage);
 				CreateMessage(pos, "Nicely done. Now you're ready to start your job!");
 				break;
 
 			// Monster destroyed world
-			case 10:
+			case 12:
 				Destroy(currentMessage);
-				WorldStatus.world.Health.x = 500;
-				Souls.ClearMonsters();
 				WorldStatus.enabled = false;
 				CreateMessage(pos, "No, no! The monsters have overrun the world. Try again.");
 				break;
 
 			// Reset state after monster rampage
-			case 11:
+			case 13:
 				phase = 8;
-				progress = 2;
 				foreach (GameObject soul in souls) {
 					if (soul) {
 						Destroy(soul);
@@ -111,6 +114,7 @@ public class Tutorial3 : Tutorial {
 				}
 				souls.Clear();
 				WorldStatus.enabled = true;
+				WorldStatus.world.Health.x = 500;
 				Souls.ClearMonsters();
 				Souls.souls = 50;
 				ProceedTutorial();
@@ -122,10 +126,17 @@ public class Tutorial3 : Tutorial {
 		}
 	}
 
+	void Update() {
+		// Waiting for monsters to die
+		if (phase == 10 && Souls.monsters == 0) {
+			ProceedTutorial();
+		}
+	}
+
 	public override void UpdateProgress(int value) {
 		if (value < 0) {
 			// Monster destroyed world
-			phase = 10;
+			phase = 12;
 			ProceedTutorial();
 		} else if (value == 0 && (phase == 2 || phase == 7)) {
 			// opened or closed menu
@@ -133,11 +144,6 @@ public class Tutorial3 : Tutorial {
 		} else if (value == 1 && phase == 6) {
 			// purchased boat
 			ProceedTutorial();
-		} else if (value == 1 && phase == 9) {
-			// hero killed off monster
-			if (++progress == 7) {
-				ProceedTutorial();
-			}
 		}
 	}
 
@@ -171,6 +177,7 @@ public class Tutorial3 : Tutorial {
 		}
 		RPGCharacter monster = soul.GetComponent<RPGCharacter>();
 		monster.Attack = new Vector2(attack, attack);
+		souls.Add(soul);
 		return soul;
 	}
 }
