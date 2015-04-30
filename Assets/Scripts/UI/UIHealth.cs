@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class UIHealth : MonoBehaviour {
+	public bool invert;
 	public RPGCharacter character;
 	// Use this for initialization
 	void Start () {
@@ -11,7 +12,11 @@ public class UIHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 scale = transform.localScale;
-		scale.x = character.Health.x / character.Health.y;
+		if(invert) {
+			scale.y = 1 - character.Health.x / character.Health.y;
+		} else {
+			scale.x = character.Health.x / character.Health.y;
+		}
 		transform.localScale = scale;
 	}
 }
