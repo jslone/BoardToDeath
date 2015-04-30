@@ -4,7 +4,7 @@ using System.Collections;
 public class TimedEquations : MonoBehaviour {
 	public Equation equation;
 
-	private float time;
+	public float time;
 	private float lastValue;
 	public float value { get; private set; }
 	public float delta { get { return value - lastValue; } }

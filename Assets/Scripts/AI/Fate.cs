@@ -28,6 +28,7 @@ public class Fate : Commandable {
 				if((Target.transform.position.x - transform.position.x)*transform.localScale.x > 0)
 					Flip ();
 				CutSound.Play();
+				GetComponent<Animator>().SetTrigger("cut");
 				Target.Cut();
 				Targets.Dequeue();
 			}

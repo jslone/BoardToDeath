@@ -19,7 +19,7 @@ public class NaturalDisaster : RandomEvent {
 
 		CreateMessage(transform.position,disasters[eventId].message, duration);
 		for(int i = 0; i < numSouls; i++) {
-			SoulSpawner.UseSpawner();
+			SoulSpawner.UseSpawner().GetComponent<Patience>().enabled = true;
 		}
 	}
 
