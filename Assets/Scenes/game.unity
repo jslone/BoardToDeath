@@ -2110,6 +2110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 408134172}
+  otherMenu: {fileID: 474662854}
 --- !u!114 &837819822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3796,6 +3797,10 @@ Prefab:
       propertyPath: DestroyOnDeath
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11419840, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: upgradeButton
+      value: 
+      objectReference: {fileID: 837819819}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
   m_IsPrefabParent: 0
@@ -4056,10 +4061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422635f8bcee30e439a21aae359086fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boats:
-  - {fileID: 1963152653}
-  - {fileID: 424961605}
-  - {fileID: 116538677}
 --- !u!1 &1479806532
 GameObject:
   m_ObjectHideFlags: 0
@@ -4138,6 +4139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 474662854}
+  otherMenu: {fileID: 408134172}
 --- !u!114 &1484823386
 MonoBehaviour:
   m_ObjectHideFlags: 0
