@@ -1842,7 +1842,7 @@ Transform:
   - {fileID: 28497301}
   - {fileID: 241818110}
   - {fileID: 389282767}
-  - {fileID: 1765291808}
+  - {fileID: 1495047438}
   m_Father: {fileID: 600098977}
   m_RootOrder: 1
 --- !u!1001 &818607356
@@ -3985,6 +3985,60 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1484823383}
+--- !u!1001 &1495047437
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 745195459}
+    m_Modifications:
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 148366, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: m_Name
+      value: SoulSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 11424778, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+      propertyPath: line
+      value: 
+      objectReference: {fileID: 389282768}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1495047438 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 410914, guid: 112fa68ef228044d9920a033539c6b90, type: 2}
+  m_PrefabInternal: {fileID: 1495047437}
 --- !u!1001 &1496706596
 Prefab:
   m_ObjectHideFlags: 0
@@ -4620,49 +4674,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e104efdb7ce9e69418feeba180a547b2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: .588235319}
---- !u!1 &1765291807
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1765291808}
-  - 114: {fileID: 1765291809}
-  m_Layer: 0
-  m_Name: SoulSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1765291808
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765291807}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 4.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 745195459}
-  m_RootOrder: 3
---- !u!114 &1765291809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1765291807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d00c31c9174b435884f230f37f88d9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefab: {fileID: 141598, guid: bd9005888ef1242ed8f95750150c0b6d, type: 2}
-  Wait: 0
-  ScaleOnInstantiate: 1
-  line: {fileID: 389282768}
 --- !u!1 &1817251340
 GameObject:
   m_ObjectHideFlags: 0
