@@ -53,9 +53,7 @@ public class Boat : Upgradeable {
 				character.transform.FindChild("Status").gameObject.SetActive(false);
 
 				GameObject soul = character.gameObject;
-				Vector3 scale = soul.transform.localScale;
 				soul.transform.parent = transform;
-				soul.transform.localScale = scale;
 
 				character.Teleport(transform.TransformPoint(posInBoat));
 				onBoat.Add(soul);

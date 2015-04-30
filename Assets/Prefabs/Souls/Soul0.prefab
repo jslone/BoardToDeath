@@ -84,8 +84,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193110}
   m_LocalRotation: {x: 0, y: 0, z: -.707106829, w: .707106709}
-  m_LocalPosition: {x: -.300000012, y: .800000012, z: 0}
-  m_LocalScale: {x: .300000012, y: 1.79999995, z: 1}
+  m_LocalPosition: {x: -.300000012, y: 1.10000002, z: 0}
+  m_LocalScale: {x: .0500000007, y: .600000024, z: 1}
   m_Children:
   - {fileID: 479716}
   - {fileID: 447760}
@@ -98,8 +98,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.36999989, y: -1.37, z: 0}
-  m_LocalScale: {x: .400000006, y: .400000006, z: 1}
+  m_LocalPosition: {x: -3.8499999, y: .310000002, z: 0}
+  m_LocalScale: {x: .800000012, y: .800000012, z: 1}
   m_Children:
   - {fileID: 422804}
   m_Father: {fileID: 0}
@@ -220,8 +220,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scale: 1
-  Offset: {x: 0, y: 20}
-  Amplitude: 10
+  Offset: {x: 0, y: 0}
+  Amplitude: 5
   Period: 11
   PhaseOffset: 0
 --- !u!114 &11459412
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scale: 1
   Offset: {x: 0, y: 0}
-  Amplitude: 5
+  Amplitude: 2.5
   Period: 7
   PhaseOffset: 0
 --- !u!114 &11489878
