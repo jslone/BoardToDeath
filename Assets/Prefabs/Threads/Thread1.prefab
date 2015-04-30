@@ -84,7 +84,7 @@ MonoBehaviour:
   renderer: {fileID: 21218222}
   potentialMonster: {fileID: 11426386}
   goodColor: {r: 1, g: 1, b: 1, a: 1}
-  badColor: {r: .666666687, g: .274509788, b: .274509788, a: 1}
+  badColor: {r: 1, g: .627451003, b: 0, a: 1}
 --- !u!114 &11425616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equation: {fileID: 11442652}
+  time: 0
 --- !u!114 &11426386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equation: {fileID: 11418438}
+  time: 0
 --- !u!212 &21218222
 SpriteRenderer:
   m_ObjectHideFlags: 1
