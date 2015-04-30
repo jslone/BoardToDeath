@@ -24,6 +24,8 @@ public class Boat : Upgradeable {
 	private bool approaching = true;
 	// Use this for initialization
 	void Start () {
+		WaitLine.transform.parent.GetComponent<LineTarget>().enabled = true;
+		WaitLine.transform.parent.GetComponent<UISelectable>().enabled = true;
 	}
 	
 	// Update is called once per frame
