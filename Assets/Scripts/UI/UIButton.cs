@@ -33,7 +33,7 @@ public class UIButton : MonoBehaviour {
 				Application.LoadLevel("tutorial3");	// menu tutorial
 				break;
 			case ButtonAction.MENU:
-				Application.LoadLevel("menu");	// load menu
+				Application.LoadLevel("title");	// load menu
 				break;
 			case ButtonAction.QUIT:
 				Application.Quit();
