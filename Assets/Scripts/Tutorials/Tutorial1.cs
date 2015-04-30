@@ -16,32 +16,48 @@ public class Tutorial1 : Tutorial {
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;
-				CreateMessage(pos, "Hades! It's good to see you back. The souls are getting a bit restless up on Earth and I need you to deal with 'em.");
+				CreateMessage(Vector3.zero, "Agnetha... Fields of Asphodel.");
 				break;
 
 			case 1:
-				WaitAndProceed(1.5f);
+				CreateMessage(Vector3.zero, "Sisyphus... Fields of Punishment.");
 				break;
 
 			case 2:
-				CreateMessage(pos, "...Don't tell me you've forgotten how to manage souls in your short vacation! Oh, all right, I'll give you a refresher.");
+				WaitAndProceed(1f);
 				break;
 
 			case 3:
+				CreateMessage(Vector3.zero, "NEXT. Step up, mortal, don't be afraid. Your name?");
+				break;
+
+			case 4:
+				WaitAndProceed(1f);
+				break;
+
+			case 5:
+				CreateMessage(Vector3.zero, "Hmm... that's odd. I can't seem to find your name on the list. Are you sure you're dead?");
+				break;
+
+			case 6:
+				CreateMessage(Vector3.zero, "Oh! My apologies, you must be the new intern. Let me show you around.");
+				break;
+
+			case 7:
 				// TODO: add animated pointer in addition to highlighting thread
 				Thread1.GetComponent<UISelectable>().Highlight(true);
 				CreateMessage(pos, "This is a thread of life. It represents a human life in the world of living.");
 				break;
 
-			case 4:
-				pos.x = 5.5f;
+			case 8:
+				pos.x = 5.75f;
 				Thread1.GetComponent<UISelectable>().Highlight(false);
 				Atropos.GetComponent<UISelectable>().Highlight(true);
 				Atropos.GetComponent<Fate>().Flip();
 				CreateMessage(pos, "This is Atropos. She is one of the three Fates that cuts the threads of life.");
 				break;
 
-			case 5:
+			case 9:
 				Atropos.GetComponent<UISelectable>().Highlight(false);
 				Atropos.GetComponent<UISelectable>().enabled = false;
 				Atropos.GetComponent<Fate>().Flip();
@@ -50,13 +66,13 @@ public class Tutorial1 : Tutorial {
 				WaitAndProceed(2f);
 				break;
 
-			case 6:
+			case 10:
 				GameTime.paused = true;
 				Thread1.GetComponent<UISelectable>().Highlight(true);
 				CreateMessage(pos, "See the tear in the thread? Cutting threads when Atropos' scissors line up with the optimal point results in happier souls.");
 				break;
 
-			case 7:
+			case 11:
 				Thread1.GetComponent<UISelectable>().Highlight(false);
 				EnableThread(Thread1);
 				EnableThread(Thread2);
@@ -66,23 +82,23 @@ public class Tutorial1 : Tutorial {
 				break;
 
 			// On first cut
-			case 8:
+			case 12:
 				pos = new Vector3(3f, 0, 0);
 				GameTime.paused = true;
 				Destroy(currentMessage);
 				CreateMessage(pos, "That's it! Cutting a thread spawns a soul. The closer to the optimal position, the greater the soul's patience.");
 				break;
 
-			case 9:
+			case 13:
 				currentMessage = CreateMessage(pos, "Let's send a few more souls to the underworld. You know, just for practice!", -1);
 				GameTime.paused = false;
 				break;
 
 			// On final cut
-			case 10:
+			case 14:
 				GameTime.paused = true;
 				Destroy(currentMessage);
-				CreateMessage(pos, "Well done, Hades. I hope you're enjoying yourself! Let's move on.");
+				CreateMessage(pos, "Well done. I hope you're enjoying yourself! Let's move on.");
 				break;
 
 			default:
