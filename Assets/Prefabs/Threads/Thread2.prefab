@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equation: {fileID: 11451422}
+  time: 0
 --- !u!114 &11427750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equation: {fileID: 11427750}
+  time: 0
 --- !u!114 &11451422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,7 +112,7 @@ MonoBehaviour:
   renderer: {fileID: 21203538}
   potentialMonster: {fileID: 11493154}
   goodColor: {r: 1, g: 1, b: 1, a: 1}
-  badColor: {r: .666666687, g: .274509788, b: .274509788, a: 1}
+  badColor: {r: 1, g: .627451003, b: 0, a: 1}
 --- !u!114 &11467444
 MonoBehaviour:
   m_ObjectHideFlags: 1
