@@ -4,6 +4,7 @@ using System.Collections;
 public class Thread : MonoBehaviour {
 	public int soulIdx;
 	public Logistic positionEquation;
+	public Gaussian patienceEquation;
 	public TimedEquations position;
 	public TimedEquations patience;
 	public SpriteRenderer renderer;
@@ -13,9 +14,11 @@ public class Thread : MonoBehaviour {
 	public Color badColor;
 	private bool monsterSpawned = false;
 
+	public static float PatienceScale = 1.0f;
+
 	// Use this for initialization
 	void Start () {
-	
+		patienceEquation.Width *= PatienceScale;
 	}
 	
 	// Update is called once per frame

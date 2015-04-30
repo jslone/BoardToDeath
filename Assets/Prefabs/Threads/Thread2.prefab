@@ -104,6 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soulIdx: 2
   positionEquation: {fileID: 11451422}
+  patienceEquation: {fileID: 11427750}
   position: {fileID: 11420908}
   patience: {fileID: 11436490}
   renderer: {fileID: 21203538}
