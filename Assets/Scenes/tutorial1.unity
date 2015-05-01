@@ -633,6 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e750666ee87244d4be2d3ccaa34dd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DestroyOnDeath: 1
   Health: {x: 10, y: 10}
   Attack: {x: 5, y: 10}
 --- !u!114 &389670464
@@ -2113,10 +2114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422635f8bcee30e439a21aae359086fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boats:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &1479806532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,6 +2192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 408134172}
+  otherMenu: {fileID: 0}
 --- !u!114 &1484823386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2779,7 +2777,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960465004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bebba6759a604c53aa96bebdd780b44, type: 3}
   m_Name: 
