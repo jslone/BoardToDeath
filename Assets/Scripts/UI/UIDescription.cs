@@ -6,7 +6,6 @@ public class UIDescription : MonoBehaviour {
 	public Text text;
 	public Upgradeable upgrade;
 	public string[] Descriptions = new string[Upgradeable.MAX_UPGRADE_LEVEL];
-	public string Description;
 	
 	// Use this for initialization
 	void Start () {
@@ -15,8 +14,7 @@ public class UIDescription : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (upgrade.UpgradeLevel + 1 < Descriptions.Length) {
-			Description = Descriptions[upgrade.UpgradeLevel + 1];
-			text.text = Description;
+			text.text = Descriptions[upgrade.UpgradeLevel + 1];
 		} else {
 			text.text = string.Empty;
 		}

@@ -250,7 +250,7 @@ MonoBehaviour:
   animator: {fileID: 1677311565}
   Movement: {fileID: 1677311563}
   WaitLine: {fileID: 612680017}
-  Capacity: 10
+  Capacity: 5
   FrontOfBoat: {x: -1.5, y: .5, z: 0}
   Offset: {x: 1, y: 0, z: 0}
 --- !u!1001 &159096530
@@ -511,7 +511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &273483856
 MonoBehaviour:
   m_ObjectHideFlags: 0

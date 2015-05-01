@@ -67,6 +67,7 @@ public class Boat : Upgradeable {
 		// Stuff to do at end of road
 		if(!approaching && Movement.delta > 0) {
 			UnloadBoat();
+			animator.SetInteger("level", UpgradeLevel);
 			approaching = true;
 		}
 	}

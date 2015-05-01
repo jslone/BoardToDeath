@@ -208,6 +208,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 486648466}
     m_Modifications:
+    - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: Descriptions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 22413362, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -343,15 +347,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[1]
-      value: Upgrade Speed and Capacity to 3
+      value: 'Speed: 10  Capacity: 1'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[2]
-      value: Upgrade Speed and Capacity to 5
+      value: 'Speed: 14  Capacity: 2'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[3]
-      value: Upgrade Speed and Capacity to 8
+      value: 'Speed: 16  Capacity: 3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: Descriptions.Array.data[4]
+      value: 'Speed: 20  Capacity: 5'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
@@ -2129,6 +2137,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 486648466}
     m_Modifications:
+    - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: Descriptions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 22413362, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2268,19 +2280,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[0]
-      value: 'Buy a Huge Boat! Capacity: 10'
+      value: 'Buy a Huge Boat! Capacity: 5'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[1]
-      value: Upgrade Speed and Capacity to 15
+      value: 'Speed: 1    Capacity: 5'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[2]
-      value: Upgrade Speed and Capacity to 20
+      value: 'Speed: 2   Capacity: 8'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[3]
-      value: Upgrade Speed and Capacity to 30
+      value: 'Speed: 3   Capacity: 10'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: text
@@ -2290,6 +2302,10 @@ Prefab:
       propertyPath: upgrade
       value: 
       objectReference: {fileID: 116538677}
+    - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: Descriptions.Array.data[4]
+      value: 'Speed: 4   Capacity: 15'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
   m_IsPrefabParent: 0
@@ -2780,6 +2796,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 486648466}
     m_Modifications:
+    - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: Descriptions.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 22413362, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2915,19 +2935,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[0]
-      value: Starter Boat
+      value: 'Speed: 5   Capacity: 3'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[1]
-      value: Upgrade Speed and Capacity to 5
+      value: 'Speed: 5   Capacity: 3'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[2]
-      value: Upgrade Speed and Capacity to 8
+      value: 'Speed: 7   Capacity: 5'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[3]
-      value: Upgrade Speed and Capacity to 12
+      value: 'Speed: 8   Capacity: 7'
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: text
@@ -2937,6 +2957,10 @@ Prefab:
       propertyPath: upgrade
       value: 
       objectReference: {fileID: 424961605}
+    - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
+      propertyPath: Descriptions.Array.data[4]
+      value: 'Speed: 10  Capacity: 10'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
   m_IsPrefabParent: 0
