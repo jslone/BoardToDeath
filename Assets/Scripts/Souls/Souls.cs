@@ -30,6 +30,8 @@ public class Souls : MonoBehaviour {
 
 	public GameObject mainMenu;
 	public GameObject upgradeButton;
+	public GameObject Threads;
+	public GameObject Docks;
 	public Animator menuAnim;
 
 	// Use this for initialization
@@ -104,7 +106,18 @@ public class Souls : MonoBehaviour {
 		GameTime.done = true;
 		mainMenu.SetActive(true);
 		menuAnim.SetTrigger("gameOver");
+
+		// Disable interactive buttons and hovering
 		upgradeButton.GetComponent<Button>().interactable = false;
 		upgradeButton.GetComponent<EventTrigger>().enabled = false;
+
+		BoxCollider2D[] colliders = Threads.GetComponentsInChildren<BoxCollider2D>();
+		foreach (BoxCollider2D collider in colliders) {
+			collider.enabled = false;
+		}
+		colliders = Docks.GetComponentsInChildren<BoxCollider2D>();
+		foreach (BoxCollider2D collider in colliders) {
+			collider.enabled = false;
+		}
 	}
 }

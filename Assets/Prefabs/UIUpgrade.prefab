@@ -63,6 +63,7 @@ GameObject:
   - 114: {fileID: 11480498}
   - 114: {fileID: 11481398}
   - 114: {fileID: 11404400}
+  - 114: {fileID: 11467104}
   m_Layer: 5
   m_Name: UIUpgrade
   m_TagString: Untagged
@@ -130,6 +131,25 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Fast Boat
+--- !u!114 &11467104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9486d355655d3554fb1b5ae513bac31f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  upgrade: {fileID: 0}
+  Descriptions:
+  - 
+  - 
+  - 
+  - 
+  Description: 
 --- !u!114 &11480498
 MonoBehaviour:
   m_ObjectHideFlags: 1
