@@ -523,42 +523,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: .5
       objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: upgrade
-      value: 
-      objectReference: {fileID: 1963152653}
-    - target: {fileID: 0}
-      propertyPath: upgrade
-      value: 
-      objectReference: {fileID: 1963152653}
-    - target: {fileID: 11446206, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: m_Text
-      value: Soldier
-      objectReference: {fileID: 0}
-    - target: {fileID: 11436648, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: Health.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11436648, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: Health.y
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: heroPrefab
-      value: 
-      objectReference: {fileID: 195920, guid: 0584f9f8bfd6d467c95c839985e74080, type: 2}
-    - target: {fileID: 11447948, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: Cost
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 11474698, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: m_Text
-      value: 'Cost: 10'
-      objectReference: {fileID: 0}
-    - target: {fileID: 188384, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
-      propertyPath: m_Name
-      value: name
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0
@@ -4027,6 +3991,14 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 150
       objectReference: {fileID: 0}
+    - target: {fileID: 11494462, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_Text
+      value: 'Pegasus rider.
+
+        Health: 20
+
+        Attack: 20'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
   m_IsPrefabParent: 0
@@ -6228,6 +6200,22 @@ Prefab:
     - target: {fileID: 22475900, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
       propertyPath: m_SizeDelta.x
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 188384, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_Name
+      value: name
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494462, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_Text
+      value: 'Chariot hero.
+
+        Health: 15
+
+        Attack: 10'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11446206, guid: ae04db38302824674b3d44c2f925d29c, type: 2}
+      propertyPath: m_Text
+      value: Hero
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae04db38302824674b3d44c2f925d29c, type: 2}

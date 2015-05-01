@@ -16,7 +16,7 @@ public class Tutorial3 : Tutorial {
 
 	// Continue in tutorial
 	protected override void ProceedTutorial() {
-		Vector3 pos = new Vector3(0, -3f, 0); // position of text message
+		Vector3 pos = new Vector3(0, -4f, 0); // position of text message
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;
