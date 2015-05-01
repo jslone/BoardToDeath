@@ -2,8 +2,12 @@
 using System.Collections;
 
 public class Patience : MonoBehaviour {
+	private bool playedImpatientSound = false;
 	public float LifeSpan { get; private set; }
 	public float TTL;
+
+	public AudioSource[] impatientSounds;
+	public AudioSource[] turnSounds;
 
 	void Awake() {
 		LifeSpan = TTL;
@@ -17,6 +21,10 @@ public class Patience : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		TTL -= GameTime.deltaTime.time;
+		if(!playedImpatientSound && TTL < 5) {
+			impatientSounds[Random.Range(0,impatientSounds.Length)].Play();
+			playedImpatientSound = true;
+		}
 		if(TTL < 0) {
 			Turn();
 		}
@@ -51,6 +59,7 @@ public class Patience : MonoBehaviour {
 		SpriteRenderer r = GetComponent<SpriteRenderer>();
 		Color color = r.color;
 		color.a = 0.75f;
-		r.color = color;	
+		r.color = color;
+		turnSounds[Random.Range(0,turnSounds.Length)].Play();
 	}
 }
