@@ -143,7 +143,7 @@ MonoBehaviour:
   WaitLine: {fileID: 0}
   Capacity: 3
   FrontOfBoat: {x: -1.5, y: .5, z: 0}
-  Offset: {x: .5, y: 0, z: 0}
+  Offset: {x: .25, y: 0, z: 0}
 --- !u!114 &11427142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   equation: {fileID: 11427142}
+  time: 0
 --- !u!212 &21228616
 SpriteRenderer:
   m_ObjectHideFlags: 1

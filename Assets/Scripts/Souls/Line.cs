@@ -30,6 +30,7 @@ public class Line : MonoBehaviour {
 
 		Vector3 scale = character.transform.localScale;
 		character.transform.parent = transform;
+		scale.x = Mathf.Sign(Space) * Mathf.Abs(scale.x);
 		character.transform.localScale = scale;
 
 		Queue.AddLast(character);
