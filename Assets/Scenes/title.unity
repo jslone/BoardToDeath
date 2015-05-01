@@ -2568,8 +2568,7 @@ RectTransform:
 --- !u!114 &1952993596
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11485834, guid: 9ec8ee9359a48ac4a953b0f21f3f3e12,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1952993594}
   m_Enabled: 1
@@ -2871,8 +2870,7 @@ RectTransform:
 --- !u!114 &2045225213
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11485834, guid: 9ec8ee9359a48ac4a953b0f21f3f3e12,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2045225211}
   m_Enabled: 1
