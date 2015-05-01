@@ -6,7 +6,7 @@ public class Thread : MonoBehaviour {
 	public Logistic positionEquation;
 	public Gaussian patienceEquation;
 	public TimedEquations position;
-	public TimedEquations patience;
+	public PositionalEquations patience;
 	public SpriteRenderer renderer;
 	public RPGCharacter potentialMonster;
 

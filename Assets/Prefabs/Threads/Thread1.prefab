@@ -30,7 +30,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 182078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .400000006, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -93,11 +93,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 182078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23a7a1f4125b24b8a90af415a08bb272, type: 3}
+  m_Script: {fileID: 11500000, guid: 56afb6e8fb2aa4b43a3019521af17cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   equation: {fileID: 11442652}
-  time: 0
+  position: 0
+  positionScale: -3.25
 --- !u!114 &11426386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,6 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e750666ee87244d4be2d3ccaa34dd4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DestroyOnDeath: 1
   Health: {x: 10, y: 10}
   Attack: {x: 5, y: 10}
 --- !u!114 &11442652
@@ -123,10 +125,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scale: 1
-  Offset: {x: 0, y: .5}
-  Height: .5
-  Midpoint: 15
-  Width: 10
+  Offset: {x: 0, y: .25}
+  Height: .75
+  Midpoint: .5
+  Width: .319999993
 --- !u!114 &11480550
 MonoBehaviour:
   m_ObjectHideFlags: 1
