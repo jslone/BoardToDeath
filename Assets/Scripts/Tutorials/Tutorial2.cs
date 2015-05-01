@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class Tutorial2 : Tutorial {
 	public GameObject BoardingLine1;
 	public GameObject BoardingLine2;
-	public GameObject BoardingLine3;
 	public Souls WorldStatus;
 
 	GameObject currentMessage;
@@ -114,7 +113,6 @@ public class Tutorial2 : Tutorial {
 	void ToggleBoardingLines(bool on) {
 		BoardingLine1.GetComponent<BoxCollider2D>().enabled = on;
 		BoardingLine2.GetComponent<BoxCollider2D>().enabled = on;
-		BoardingLine3.GetComponent<BoxCollider2D>().enabled = on;
 	}
 
 	GameObject SpawnSoul(float patience, float attack) {

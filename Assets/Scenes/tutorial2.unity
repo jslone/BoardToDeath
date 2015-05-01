@@ -519,7 +519,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 273483855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d5c1384e109254196cc6f0e3dda099, type: 3}
   m_Name: 
@@ -547,7 +547,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 273483855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ddc66de66541d41a7c4cac65b1e15c, type: 3}
   m_Name: 
@@ -1187,7 +1187,6 @@ MonoBehaviour:
   Message: {fileID: 116654, guid: 5ae299634193dd843a31834ac21b017f, type: 2}
   BoardingLine1: {fileID: 1478522564}
   BoardingLine2: {fileID: 1817251340}
-  BoardingLine3: {fileID: 273483855}
   WorldStatus: {fileID: 707148347}
 --- !u!114 &513171835
 MonoBehaviour:
@@ -3698,10 +3697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422635f8bcee30e439a21aae359086fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Boats:
-  - {fileID: 1963152653}
-  - {fileID: 0}
-  - {fileID: 116538677}
 --- !u!1 &1478522564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3728,7 +3723,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478522564}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d5c1384e109254196cc6f0e3dda099, type: 3}
   m_Name: 
@@ -3756,7 +3751,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478522564}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ddc66de66541d41a7c4cac65b1e15c, type: 3}
   m_Name: 
@@ -3868,6 +3863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 408134172}
+  otherMenu: {fileID: 0}
 --- !u!114 &1484823386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4639,7 +4635,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817251340}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d5c1384e109254196cc6f0e3dda099, type: 3}
   m_Name: 
@@ -4667,7 +4663,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817251340}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ddc66de66541d41a7c4cac65b1e15c, type: 3}
   m_Name: 
