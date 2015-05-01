@@ -2738,7 +2738,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Offset.x
-      value: 1
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 21228616, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: m_Sprite
@@ -6378,7 +6378,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Offset.x
-      value: 0
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: UpgradeLevel

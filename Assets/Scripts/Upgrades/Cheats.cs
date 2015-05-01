@@ -15,5 +15,8 @@ public class Cheats : MonoBehaviour {
 		if(Input.GetKey(KeyCode.Backspace)) {
 			PlayerPrefs.DeleteAll();
 		}
+		if(Input.GetKey(KeyCode.Alpha0)) {
+			SoulSpawner.UseSpawner();
+		}
 	}
 }

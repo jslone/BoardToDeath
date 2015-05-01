@@ -20,6 +20,7 @@ public class NaturalDisaster : RandomEvent {
 	}
 
 	protected override void Event () {
+		count++;
 		int eventId = Random.Range(0,disasters.Length);
 		int numSouls = Random.Range(disasters[eventId].min, disasters[eventId].max);
 
