@@ -1536,11 +1536,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .25
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -2378,11 +2374,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -2436,15 +2428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 144
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -3174,15 +3158,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -3839,8 +3815,8 @@ MonoBehaviour:
   Scale: 1
   Offset: {x: 0, y: 0}
   Height: .0160000008
-  Midpoint: 60
-  Slope: .0500000007
+  Midpoint: 200
+  Slope: .0299999993
 --- !u!1001 &1197942899
 Prefab:
   m_ObjectHideFlags: 0
@@ -3886,15 +3862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 96
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
+      value: 800
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -4305,11 +4273,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 168
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -4621,15 +4585,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -4977,15 +4933,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Height
-      value: .200000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
-      propertyPath: Slope
-      value: .0500000007
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
@@ -6192,6 +6140,10 @@ Prefab:
     - target: {fileID: 150972, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: m_Name
       value: ThreadSpawner 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
+      propertyPath: Midpoint
+      value: 800
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}

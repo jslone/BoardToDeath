@@ -138,8 +138,8 @@ MonoBehaviour:
   Scale: 1
   Offset: {x: 0, y: 0}
   Height: .200000003
-  Midpoint: 80
-  Slope: .0500000007
+  Midpoint: 200
+  Slope: .00999999978
 --- !u!114 &11449054
 MonoBehaviour:
   m_ObjectHideFlags: 1
