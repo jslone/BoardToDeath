@@ -13,6 +13,6 @@ public class UICost : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		text.text = upgrade.UpgradeLevel < Boat.MAX_UPGRADE_LEVEL ? "Cost: " + upgrade.Cost : "";
+		text.text = upgrade.UpgradeLevel < upgrade.MaxUpgradeLevel - 1 ? "Cost: " + upgrade.Cost : "";
 	}
 }

@@ -6,6 +6,8 @@ public class Fate : Commandable {
 	public MoveCharacter move;
 	public float Offset = 0.5f;
 
+	public Color queueColor;
+
 	private Queue<ThreadTarget> Targets = new Queue<ThreadTarget>();
 	public AudioSource CutSound;
 
@@ -30,6 +32,7 @@ public class Fate : Commandable {
 				CutSound.Play();
 				GetComponent<Animator>().SetTrigger("cut");
 				Target.Cut();
+				SetColor(Target,Color.black);
 				Targets.Dequeue();
 			}
 		}
@@ -41,12 +44,20 @@ public class Fate : Commandable {
 		transform.localScale = scale;
 	}
 
+	void SetColor(ThreadTarget t, Color c) {
+		t.transform.GetChild(0).GetComponent<SpriteRenderer>().color = c;
+	}
+
 	public override void UseTarget (Target t) {
 		ThreadTarget target = t as ThreadTarget;
 		if(target) {
 			if(Targets.Contains(target)) {
+				foreach(ThreadTarget old in Targets) {
+					SetColor(old,Color.black);
+				}
 				Targets.Clear();
 			}
+			SetColor(target,queueColor);
 			Targets.Enqueue(target);
 		}
 	}

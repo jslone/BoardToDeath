@@ -163,6 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move: {fileID: 11411724}
   Offset: .5
+  queueColor: {r: .402845055, g: .56501621, b: .607843161, a: 1}
   CutSound: {fileID: 8290370}
 --- !u!212 &21214102
 SpriteRenderer:
