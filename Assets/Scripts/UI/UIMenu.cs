@@ -18,7 +18,7 @@ public class UIMenu : MonoBehaviour {
 	}
 
 	public void Toggle() {
-		if (otherMenu.activeSelf) {
+		if (otherMenu != null && otherMenu.activeSelf) {
 			menu.SetActive(true);
 			otherMenu.SetActive(false);
 		} else {

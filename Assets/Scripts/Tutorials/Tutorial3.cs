@@ -20,6 +20,7 @@ public class Tutorial3 : Tutorial {
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;
+				ToggleButton(MenuButton, false);
 				CreateMessage(Vector3.zero, "Once you've ferried enough souls, you can use them to purchase upgrades!");
 				break;
 
@@ -27,7 +28,7 @@ public class Tutorial3 : Tutorial {
 				pos = new Vector3(5f, 3.25f, 0);
 				GameTime.paused = false;
 				ToggleButton(MenuButton, true);
-				currentMessage = CreateMessage(pos, "Click the Menu button to pause the game and view possible upgrades.", -1);
+				currentMessage = CreateMessage(pos, "Click the Upgrades button to pause the game and view possible upgrades.", -1);
 				break;
 
 			// opened menu
@@ -57,7 +58,7 @@ public class Tutorial3 : Tutorial {
 				Destroy(currentMessage);
 				ToggleButton(MenuButton, true);
 				pos = new Vector3(5f, 3.25f, 0);
-				currentMessage = CreateMessage(pos, "Click on Menu to unpause the game and see your new hero.", -1);
+				currentMessage = CreateMessage(pos, "Click the button to unpause the game and see your new hero.", -1);
 				break;
 
 			case 7:
@@ -67,7 +68,7 @@ public class Tutorial3 : Tutorial {
 				if (currentMessage) Destroy(currentMessage);
 				ToggleButton(MenuButton, false);
 				pos = new Vector3(4f, 2.75f, 0);
-				currentMessage = CreateMessage(pos, "Heroes fight off monsters that spawn when souls run out of patience. However, they can get killed too!", 10);
+				currentMessage = CreateMessage(pos, "Heroes fight off monsters that spawn when souls run out of patience. However, they can get killed too!", 8);
 				break;
 
 			case 8:
@@ -79,7 +80,7 @@ public class Tutorial3 : Tutorial {
 				Destroy(currentMessage);
 				ToggleButton(MenuButton, true);
 				Souls.souls = 50;
-				pos = new Vector3(-3.5f, 2.75f, 0);
+				pos = new Vector3(-3.5f, 3.5f, 0);
 				currentMessage = CreateMessage(pos, "Buy more powerful heroes to defeat the monsters before they overrun the world, as indicated by the world status meter!", -1);
 				WaitAndProceed(5f);
 				break;
@@ -97,7 +98,7 @@ public class Tutorial3 : Tutorial {
 			// Monster destroyed world
 			case 12:
 				Destroy(currentMessage);
-				WorldStatus.world.Health.x = 500;
+				WorldStatus.world.Health.x = 1;
 				Souls.ClearMonsters();
 				CreateMessage(pos, "No, no! The monsters have overrun the world. Try again.");
 				break;
@@ -111,6 +112,7 @@ public class Tutorial3 : Tutorial {
 					}
 				}
 				souls.Clear();
+				WorldStatus.world.Health.x = 500;
 				Souls.souls = 50;
 				ProceedTutorial();
 				break;
@@ -137,7 +139,7 @@ public class Tutorial3 : Tutorial {
 			// opened or closed menu
 			ProceedTutorial();
 		} else if (value == 1 && phase == 6) {
-			// purchased boat
+			// purchased hero
 			ProceedTutorial();
 		}
 	}
