@@ -2669,7 +2669,7 @@ Prefab:
       objectReference: {fileID: 612680017}
     - target: {fileID: 11420134, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: Capacity
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 21228616, guid: c96614c4a30934717b237453b1467fd5, type: 2}
       propertyPath: m_SortingLayerID
