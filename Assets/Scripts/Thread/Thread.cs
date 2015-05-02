@@ -3,9 +3,7 @@ using System.Collections;
 
 public class Thread : MonoBehaviour {
 	public int soulIdx;
-	public Logistic positionEquation;
 	public Gaussian patienceEquation;
-	public TimedEquations position;
 	public PositionalEquations patience;
 	public SpriteRenderer renderer;
 	public RPGCharacter potentialMonster;
