@@ -9,6 +9,7 @@ public class Tutorial3 : Tutorial {
 	public Button MenuLeftButton;
 	public Button MenuRightButton;
 	public Souls WorldStatus;
+	public Line TSALine;
 
 	GameObject currentMessage;
 	List<GameObject> souls = new List<GameObject>();
@@ -67,7 +68,7 @@ public class Tutorial3 : Tutorial {
 				SpawnSoul(2f, 3f);
 				if (currentMessage) Destroy(currentMessage);
 				ToggleButton(MenuButton, false);
-				pos = new Vector3(4f, 2.75f, 0);
+				pos = new Vector3(-3.5f, 3.5f, 0);
 				currentMessage = CreateMessage(pos, "Heroes fight off monsters that spawn when souls run out of patience. However, they can get killed too!", 8);
 				break;
 
@@ -82,15 +83,10 @@ public class Tutorial3 : Tutorial {
 				Souls.souls = 50;
 				pos = new Vector3(-3.5f, 3.5f, 0);
 				currentMessage = CreateMessage(pos, "Buy more powerful heroes to defeat the monsters before they overrun the world, as indicated by the world status meter!", -1);
-				WaitAndProceed(5f);
-				break;
-
-			// Waiting for monsters to die
-			case 9:
 				break;
 
 			// After all monsters are slain
-			case 10:
+			case 9:
 				Destroy(currentMessage);
 				CreateMessage(pos, "Nicely done. Now you're ready to start your job!");
 				break;
@@ -125,7 +121,7 @@ public class Tutorial3 : Tutorial {
 
 	void Update() {
 		// Waiting for monsters to die
-		if (phase == 10 && Souls.monsters == 0) {
+		if (phase == 9 && Souls.monsters == 0 && TSALine.Length == 0) {
 			ProceedTutorial();
 		}
 	}

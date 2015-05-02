@@ -12,7 +12,7 @@ public class Tutorial1 : Tutorial {
 
 	// Continue in tutorial
 	protected override void ProceedTutorial() {
-		Vector3 pos = new Vector3(-5f, 2.75f, 0); // position of text message
+		Vector3 pos = new Vector3(-4.5f, 2.75f, 0); // position of text message
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;

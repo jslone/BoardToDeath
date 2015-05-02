@@ -328,6 +328,7 @@ MonoBehaviour:
   MenuLeftButton: {fileID: 1804278111}
   MenuRightButton: {fileID: 1804278112}
   WorldStatus: {fileID: 447215483}
+  TSALine: {fileID: 1672434688}
 --- !u!114 &47221236
 MonoBehaviour:
   m_ObjectHideFlags: 0

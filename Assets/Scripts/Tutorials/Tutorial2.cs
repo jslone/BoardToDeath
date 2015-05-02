@@ -54,7 +54,7 @@ public class Tutorial2 : Tutorial {
 				pos.x = -4f;
 				currentMessage = CreateMessage(pos, "Ferry the remaining souls across before they run out of patience!", -1);
 				for (int i = 0; i < 10; i++) {
-					souls.Add(SpawnSoul(Random.Range(20f, 30f), 100f));
+					souls.Add(SpawnSoul(Random.Range(25f, 32f), 100f));
 				}
 				break;
 
