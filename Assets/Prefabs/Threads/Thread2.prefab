@@ -77,7 +77,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   equation: {fileID: 11427750}
   position: 0
-  positionScale: -3.25
+  maxPos: -.319999993
 --- !u!114 &11451422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,6 +114,7 @@ MonoBehaviour:
   potentialMonster: {fileID: 11493154}
   goodColor: {r: 1, g: 1, b: 1, a: 1}
   badColor: {r: 1, g: .627451003, b: 0, a: 1}
+  badThreadColor: {r: .392156869, g: 0, b: 0, a: 1}
 --- !u!114 &11467444
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,6 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {fileID: 11420908}
   Direction: {x: 0, y: -1, z: 0}
+  MaxDistance: Infinity
   Flipable: 0
 --- !u!114 &11493154
 MonoBehaviour:

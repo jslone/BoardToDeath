@@ -4581,7 +4581,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11445740, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}
       propertyPath: Midpoint
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f100fddb2453046fcb5a5a67cf534189, type: 2}

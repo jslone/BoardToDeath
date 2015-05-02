@@ -32,7 +32,7 @@ public class Fate : Commandable {
 				CutSound.Play();
 				GetComponent<Animator>().SetTrigger("cut");
 				Target.Cut();
-				SetColor(Target,Color.black);
+				Target.SetColor(Color.black);
 				Targets.Dequeue();
 			}
 		}
@@ -44,20 +44,16 @@ public class Fate : Commandable {
 		transform.localScale = scale;
 	}
 
-	void SetColor(ThreadTarget t, Color c) {
-		t.transform.GetChild(0).GetComponent<SpriteRenderer>().color = c;
-	}
-
 	public override void UseTarget (Target t) {
 		ThreadTarget target = t as ThreadTarget;
 		if(target) {
 			if(Targets.Contains(target)) {
 				foreach(ThreadTarget old in Targets) {
-					SetColor(old,Color.black);
+					old.ResetColor();
 				}
 				Targets.Clear();
 			}
-			SetColor(target,queueColor);
+			target.SetColor(queueColor);
 			Targets.Enqueue(target);
 		}
 	}

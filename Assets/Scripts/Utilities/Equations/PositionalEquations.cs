@@ -5,7 +5,7 @@ public class PositionalEquations : MonoBehaviour {
 	public Equation equation;
 
 	public float position;
-	public float positionScale;
+	public float maxPos;
 	private float lastValue;
 	public float value { get; private set; }
 	public float delta { get { return value - lastValue; } }
@@ -18,7 +18,7 @@ public class PositionalEquations : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		lastValue = value;
-		position = transform.localPosition.y * positionScale; // TODO: don't hard-code to y
+		position = transform.localPosition.y / maxPos; // TODO: don't hard-code to y
 		value = equation.eval(position);
 	}
 

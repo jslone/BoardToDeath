@@ -3,6 +3,7 @@ using System.Collections;
 
 public class ThreadTarget : Target {
 	int cutHash = Animator.StringToHash("Cut");
+	Color lastColor = Color.black;
 
 	// Use this for initialization
 	void Start () {
@@ -20,6 +21,15 @@ public class ThreadTarget : Target {
 		if(thread) {
 			thread.Cut();
 		}
+	}
+
+	public void SetColor(Color c) {
+		lastColor = transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+		transform.GetChild(0).GetComponent<SpriteRenderer>().color = c;
+	}
+
+	public void ResetColor() {
+		transform.GetChild(0).GetComponent<SpriteRenderer>().color = lastColor;
 	}
 
 	public override void DoSomething() {

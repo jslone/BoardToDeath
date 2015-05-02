@@ -4,6 +4,7 @@ using System.Collections;
 public class TraceEquation : MonoBehaviour {
 	public TimedEquations Position;
 	public Vector3 Direction;
+	public float MaxDistance = Mathf.Infinity;
 	public bool Flipable;
 
 	// Use this for initialization
@@ -16,6 +17,7 @@ public class TraceEquation : MonoBehaviour {
 		if(Flipable && Position.delta * transform.lossyScale.x < 0) {
 			Flip();
 		}
+		transform.localPosition = Vector3.ClampMagnitude(transform.localPosition, MaxDistance);
 	}
 
 	void Flip() {
