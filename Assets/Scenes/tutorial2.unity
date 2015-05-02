@@ -2308,6 +2308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {fileID: 1018292989}
   Direction: {x: -1, y: 0, z: 0}
+  MaxDistance: Infinity
   Flipable: 1
 --- !u!212 &1018292994
 SpriteRenderer:
@@ -2890,6 +2891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {fileID: 1162311680}
   Direction: {x: -1, y: 0, z: 0}
+  MaxDistance: Infinity
   Flipable: 1
 --- !u!114 &1162311679
 MonoBehaviour:
@@ -3723,7 +3725,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478522564}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d5c1384e109254196cc6f0e3dda099, type: 3}
   m_Name: 
@@ -3751,7 +3753,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1478522564}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ddc66de66541d41a7c4cac65b1e15c, type: 3}
   m_Name: 
@@ -4378,6 +4380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Position: {fileID: 1677311563}
   Direction: {x: -1, y: 0, z: 0}
+  MaxDistance: Infinity
   Flipable: 1
 --- !u!212 &1677311568
 SpriteRenderer:
@@ -4635,7 +4638,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817251340}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54d5c1384e109254196cc6f0e3dda099, type: 3}
   m_Name: 
@@ -4663,7 +4666,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1817251340}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ddc66de66541d41a7c4cac65b1e15c, type: 3}
   m_Name: 

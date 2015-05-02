@@ -22,10 +22,10 @@ public class Boat : Upgradeable {
 	protected List<GameObject> onBoat = new List<GameObject>();
 
 	private bool approaching = true;
+
 	// Use this for initialization
 	void Start () {
-		WaitLine.transform.parent.GetComponent<LineTarget>().enabled = true;
-		WaitLine.transform.parent.GetComponent<UISelectable>().enabled = true;
+		WaitLine.transform.parent.gameObject.SetActive(true);
 	}
 	
 	// Update is called once per frame

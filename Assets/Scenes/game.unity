@@ -4381,6 +4381,14 @@ Prefab:
       propertyPath: Docks
       value: 
       objectReference: {fileID: 241818109}
+    - target: {fileID: 11488462, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: Health.x
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 11488462, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
+      propertyPath: Health.y
+      value: 5000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef652db50f580f54c9e0078d80c98bdc, type: 2}
   m_IsPrefabParent: 0
@@ -5113,6 +5121,18 @@ Prefab:
     - target: {fileID: 137642, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
       propertyPath: m_Name
       value: BoardingLine 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490122, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407094, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 137642, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
@@ -6471,6 +6491,18 @@ Prefab:
     - target: {fileID: 485780, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
       propertyPath: m_LocalScale.y
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 137642, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490122, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11407094, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ff4e109423814d6a8a312f5d7aad697, type: 2}

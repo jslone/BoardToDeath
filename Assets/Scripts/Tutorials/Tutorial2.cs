@@ -10,6 +10,7 @@ public class Tutorial2 : Tutorial {
 	GameObject currentMessage;
 	List<GameObject> souls = new List<GameObject>();
 	int progressedSouls = 0;
+	bool lost = false;
 
 	// Continue in tutorial
 	protected override void ProceedTutorial() {
@@ -52,7 +53,8 @@ public class Tutorial2 : Tutorial {
 			case 5:
 				ToggleBoardingLines(true);
 				pos.x = -4f;
-				currentMessage = CreateMessage(pos, "Ferry the remaining souls across before they run out of patience!", -1);
+				string message = "Ferry the remaining souls across before they run out of patience!" + (lost ? " Note the bottom boat has a larger capacity." : "");
+				currentMessage = CreateMessage(pos, message, -1);
 				for (int i = 0; i < 10; i++) {
 					souls.Add(SpawnSoul(Random.Range(25f, 32f), 100f));
 				}
@@ -87,6 +89,7 @@ public class Tutorial2 : Tutorial {
 				souls.Clear();
 				WorldStatus.enabled = true;
 				Souls.ClearMonsters();
+				lost = true;
 				ProceedTutorial();
 				break;
 
