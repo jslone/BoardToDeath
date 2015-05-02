@@ -20,6 +20,6 @@ public class UIUpgradeMover : MonoBehaviour {
 	}
 
 	public void Move(int dir) {
-		loc = Mathf.Clamp(loc+dir,0,positions.Length-1);
+		loc = (loc + dir + positions.Length) % positions.Length;
 	}
 }

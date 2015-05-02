@@ -3040,7 +3040,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: Descriptions.Array.data[0]
-      value: Buy this recharble potion that slows time down!
+      value: Buy this rechargeable potion that slows time down!
       objectReference: {fileID: 0}
     - target: {fileID: 11467104, guid: 8a1d0f7362b0c4aa997dead70f105352, type: 2}
       propertyPath: text
@@ -4686,6 +4686,14 @@ Prefab:
     - target: {fileID: 11497344, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
       propertyPath: m_Interactable
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11408968, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
+      propertyPath: names.Array.data[2]
+      value: Boats >
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440710, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
+      propertyPath: names.Array.data[0]
+      value: < Heroes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c20eb0180d8da4abaa14fbf9fdf508be, type: 2}
