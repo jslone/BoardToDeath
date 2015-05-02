@@ -134,10 +134,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scale: 1
-  Offset: {x: 0, y: .209999993}
-  Height: .600000024
-  Midpoint: 300
-  Slope: .00499999989
+  Offset: {x: 0, y: .100000001}
+  Height: .699999988
+  Midpoint: 600
+  Slope: .00150000001
 --- !u!114 &11438796
 MonoBehaviour:
   m_ObjectHideFlags: 1
