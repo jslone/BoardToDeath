@@ -13,11 +13,10 @@ public class Tutorial3 : Tutorial {
 
 	GameObject currentMessage;
 	List<GameObject> souls = new List<GameObject>();
-	int progress = 0;
 
 	// Continue in tutorial
 	protected override void ProceedTutorial() {
-		Vector3 pos = new Vector3(0, -4f, 0); // position of text message
+		Vector3 pos = new Vector3(0, -3.75f, 0); // position of text message
 		switch (phase++) {
 			case 0:
 				GameTime.paused = true;
@@ -26,7 +25,7 @@ public class Tutorial3 : Tutorial {
 				break;
 
 			case 1:
-				pos = new Vector3(5f, 3.25f, 0);
+				pos = new Vector3(4f, 3.25f, 0);
 				GameTime.paused = false;
 				ToggleButton(MenuButton, true);
 				currentMessage = CreateMessage(pos, "Click the Upgrades button to pause the game and view possible upgrades.", -1);
@@ -58,7 +57,7 @@ public class Tutorial3 : Tutorial {
 			case 6:
 				Destroy(currentMessage);
 				ToggleButton(MenuButton, true);
-				pos = new Vector3(5f, 3.25f, 0);
+				pos = new Vector3(4f, 3.25f, 0);
 				currentMessage = CreateMessage(pos, "Click the button to unpause the game and see your new hero.", -1);
 				break;
 
