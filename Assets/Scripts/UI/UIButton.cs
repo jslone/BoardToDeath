@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public enum ButtonAction {
@@ -16,24 +17,24 @@ public class UIButton : MonoBehaviour {
 	public void OnClick() {
 		switch(action) {
 			case ButtonAction.PLAY:
-				int lvl = PlayerPrefs.GetInt("levelUnlocked");	
+				int lvl = PlayerPrefs.GetInt("levelUnlocked");
 				if(lvl >= 3) {
-					Application.LoadLevel("game");	// game scene
+					SceneManager.LoadScene("game");	// game scene
 				} else {
-					Application.LoadLevel("tutorial" + (lvl+1));
+					SceneManager.LoadScene("tutorial" + (lvl+1));
 				}
 				break;
 			case ButtonAction.TUTORIAL1:
-				Application.LoadLevel("tutorial1");	// thread cutting tutorial
+				SceneManager.LoadScene("tutorial1");	// thread cutting tutorial
 				break;
 			case ButtonAction.TUTORIAL2:
-				Application.LoadLevel("tutorial2");	// boat tutorial
+				SceneManager.LoadScene("tutorial2");	// boat tutorial
 				break;
 			case ButtonAction.TUTORIAL3:
-				Application.LoadLevel("tutorial3");	// menu tutorial
+				SceneManager.LoadScene("tutorial3");	// menu tutorial
 				break;
 			case ButtonAction.MENU:
-				Application.LoadLevel("title");	// load menu
+				SceneManager.LoadScene("title");	// load menu
 				break;
 			case ButtonAction.QUIT:
 				Application.Quit();

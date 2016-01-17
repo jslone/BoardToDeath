@@ -4,7 +4,7 @@ using System.Collections;
 public class TutorialThread : Thread {
 
 	void Update () {
-		renderer.color = Color.Lerp(goodColor, badColor, 2.5f * patience.position - 1.25f);
+		spriteRenderer.color = Color.Lerp(goodColor, badColor, 2.5f * patience.position - 1.25f);
 	}
 
 	public override void Cut() {

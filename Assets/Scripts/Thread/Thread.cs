@@ -5,7 +5,7 @@ public class Thread : MonoBehaviour {
 	public int soulIdx;
 	public Gaussian patienceEquation;
 	public PositionalEquations patience;
-	public SpriteRenderer renderer;
+	public SpriteRenderer spriteRenderer;
 	public RPGCharacter potentialMonster;
 
 	public Color goodColor;
@@ -27,7 +27,7 @@ public class Thread : MonoBehaviour {
 			transform.parent.GetComponent<ThreadTarget>().SetColor(badThreadColor);
 			monsterSpawned = true;
 		}
-		renderer.color = Color.Lerp(goodColor, badColor, 2.5f * patience.position - 1.25f);
+		spriteRenderer.color = Color.Lerp(goodColor, badColor, 2.5f * patience.position - 1.25f);
 	}
 
 	public virtual void Cut() {

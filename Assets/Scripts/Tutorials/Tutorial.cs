@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public abstract class Tutorial : MonoBehaviour {
@@ -48,7 +49,7 @@ public abstract class Tutorial : MonoBehaviour {
 				levelToLoad = "title";
 				break;
 		}
-		Application.LoadLevel(levelToLoad);
+		SceneManager.LoadScene(levelToLoad);
 	}
 
 	// Create text message
