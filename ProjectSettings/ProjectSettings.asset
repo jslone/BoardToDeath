@@ -333,11 +333,11 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   metroPackageName: BoardToDeath
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: Badass Bard Games
+  metroCertificateIssuer: Badass Bard Games
+  metroCertificateNotAfter: 0036e0e2b270d201
   metroApplicationDescription: BoardToDeath
   wsaImages: {}
   metroTileShortName: 

@@ -5,8 +5,8 @@ public class Thread : MonoBehaviour {
 	public int soulIdx;
 	public Gaussian patienceEquation;
 	public PositionalEquations patience;
-	public SpriteRenderer spriteRenderer;
 	public RPGCharacter potentialMonster;
+	protected SpriteRenderer spriteRenderer;
 
 	public Color goodColor;
 	public Color badColor;
@@ -18,6 +18,7 @@ public class Thread : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		patienceEquation.Width *= PatienceScale;
+		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 	
 	// Update is called once per frame
